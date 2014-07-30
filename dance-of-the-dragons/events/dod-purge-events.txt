@@ -25,7 +25,8 @@ character_event = {
 		any_courtier = {
 			limit = {
 				NOT = {dynasty = ROOT}
-				is_ruler = no # needed because if you make one of your landed vassals a councillor he/she will be counted as a courtier
+				NOT = {is_councillor = yes}
+				NOT = {is_main_spouse = yes}
 			}
 			death = {death_reason = death_natural}
 		}
