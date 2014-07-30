@@ -1,14 +1,14 @@
-namespace = danceTesting
+namespace = dodTesting
 #Example event
 character_event = {
-    id = danceTesting.0
-    desc = "danceTesting.0.desc"
+    id = dodTesting.0
+    desc = "dodTesting.0.desc"
     picture = "GFX_evt_throne_room"
     
     is_triggered_only = yes
     
     option = {
-        name = "danceTesting.0.name"
+        name = "dodTesting.0.name"
         wealth = 200
     }
 }

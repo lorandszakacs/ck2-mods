@@ -1,0 +1,38 @@
+########################################################
+dod_player = {
+  cached = yes
+
+  birth = 0
+  inherit_chance = 0
+  random = no
+  customizer = no
+
+  spouse_opinion = 1000
+}
+
+########################################################
+
+dod_vassal = {
+	cached = yes
+
+	birth = 0
+	inherit_chance = 0
+	random = 0
+	customizer = 0
+
+	fertility = -50.0
+	immortal = yes
+
+	liege_opinion = 20
+	vassal_opinion = 20
+	spouse_opinion = 20
+}
+
+########################################################
+
+dod_builder = {
+	build_time_modifier = -1.0
+}
+########################################################
+########################################################
+########################################################
