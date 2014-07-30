@@ -102,82 +102,34 @@ character_event = {
 #####################################################################################################
 #####################################################################################################
 
-#Converts all your vassals and their courtiers to your religion and culture.
-#Removes a lot of negative traits from all characters.
+#Usurp all the titles in your realm
 
 character_event = {
 	id = dodVassal.1
-	desc = dodVassal.1.desc
+	desc = "dodVassal.1.desc"
 	picture = GFX_evt_emissary
 	
+	ai = no
 	is_triggered_only = yes
 	
 	option = {
 		name = "DODOK"
-		hidden_tooltip = {
-			any_realm_lord = {
-				religion = ROOT
-				culture = ROOT
-				add_trait = just
-				remove_trait = paranoid
-				remove_trait = cruel
-				remove_trait = impaler
-				remove_trait = stressed
-				remove_trait = depressed
-				remove_trait = lunatic
-				remove_trait = possessed
-				remove_trait = syphilitic
-				remove_trait = slothful
-				remove_trait = imbecile
-				remove_trait = wroth
-				remove_trait = gluttonous
-				remove_trait = greedy
-				remove_trait = ambitious
-				remove_trait = envious
-				remove_trait = ill
-				remove_trait = incapable
-				remove_trait = proud
-				remove_trait = deceitful
-				remove_trait = craven
-				remove_trait = shy
-				remove_trait = arbitrary
-				remove_trait = cynical
-				remove_trait = lustful
-				remove_trait = leper
+
+		any_vassal = {
+			limit = {
+				OR = {
+					tier = KING
+					tier = DUKE
+					tier = COUNT
+					tier = BARON
+				}
 			}
-			
-			any_realm_character = {
-				limit = {is_ruler = no}
-				religion = ROOT
-				culture = ROOT
-				remove_trait = paranoid
-				remove_trait = cruel
-				remove_trait = impaler
-				remove_trait = stressed
-				remove_trait = depressed
-				remove_trait = lunatic
-				remove_trait = possessed
-				remove_trait = syphilitic
-				remove_trait = slothful
-				remove_trait = imbecile
-				remove_trait = wroth
-				remove_trait = gluttonous
-				remove_trait = greedy
-				remove_trait = ambitious
-				remove_trait = envious
-				remove_trait = ill
-				remove_trait = incapable
-				remove_trait = proud
-				remove_trait = deceitful
-				remove_trait = craven
-				remove_trait = shy
-				remove_trait = arbitrary
-				remove_trait = cynical
-				remove_trait = lustful
-				remove_trait = leper
+			any_demesne_title = {
+				usurp_title = ROOT
 			}
 		}
 	}
+	
 	option = {
 		name = "DODCANCEL"
 	}
