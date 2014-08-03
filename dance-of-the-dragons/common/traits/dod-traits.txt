@@ -25,13 +25,13 @@ dod_player = {
 		
 		center = 0.1
 		flank = 0.1
-		siege = 0.3
+		siege = 0.7
 		
-		speed = 0.5
-		retreat = 0.5
+		speed = 0.7
+		retreat = 0.7
 	}
 
-	build_time_modifier = -0.3
+	build_time_modifier = -0.5
 }
 
 ########################################################
@@ -60,7 +60,7 @@ dod_builder = {
 	random = no
 	customizer = no	
 
-	build_time_modifier = -0.5
+	build_time_modifier = -0.7
 }
 ########################################################
 
@@ -90,8 +90,8 @@ dod_commander = {
 		flank = 0.1
 		siege = 0.3
 		
-		speed = 0.5
-		retreat = 0.5
+		speed = 0.7
+		retreat = 0.7
 	}
 }
 
