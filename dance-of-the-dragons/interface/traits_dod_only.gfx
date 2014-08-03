@@ -14,8 +14,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_dod_builder"
+		name = "GFX_trait_dod_administrator"
 		texturefile = "gfx/traits/dod_builder.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dod_commander"
+		texturefile = "gfx/traits/dod_commander.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

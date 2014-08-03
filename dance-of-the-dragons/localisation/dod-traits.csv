@@ -5,3 +5,4 @@ dod_player;Player Character;;;;;;;;;x
 dod_player_desc;This character is the player. It gives special event perks;;;;;;;;;x
 dod_builder;Builder;;;;;;;;;x
 dod_builder_desc;This character is an adept builder. Everything is built instantly.;;;;;;;;;x
+dod_commander_desc;This character is an excellent leader.
