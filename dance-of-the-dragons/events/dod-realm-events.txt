@@ -215,7 +215,8 @@ character_event = {
 		name = "DODOK"
 		
 		any_realm_province = {
-			limit = { has_empty_holding = true }
+			has_empty_holding = yes
+			
 			build_holding = {
 				type = city
 				holder = ROOT
