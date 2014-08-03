@@ -245,7 +245,7 @@ character_event = {
 
 character_event = {
 	id = dodRealm.2
-	desc = "Build cities everywhere!"
+	desc = "Hand out titles to vassals!"
 	picture = GFX_evt_emissary
 	
 	is_triggered_only = yes
@@ -256,8 +256,11 @@ character_event = {
 		
 		any_demesne_title = {
 			limit = {
-				tier = BARON
-				controlled_by = ROOT
+				OR = {
+					holding_type = castle 
+					holding_type = city
+					holding_type = temple
+				}
 			}
 
 			create_character = {
@@ -275,16 +278,16 @@ character_event = {
 				trait = patient
 				attributes = {
 					diplomacy = 8
-					martial = 8
+					martial = 5
 					stewardship = 8
 					intrigue = 8
 					learning = 8
 				}
 			}
 			new_character = {
-				gain_title = FROM
+				gain_title = PREV
 			}
-		}
+		} #any title
 	}
 
 	option = {
