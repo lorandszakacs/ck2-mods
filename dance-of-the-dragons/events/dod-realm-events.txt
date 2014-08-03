@@ -192,6 +192,7 @@ character_event = {
 		name = "DODCANCEL"
 	}
 }
+
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
@@ -239,3 +240,54 @@ character_event = {
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
+
+#Builds basic buildings in all your holdings.
+
+character_event = {
+	id = dodRealm.2
+	desc = "Build cities everywhere!"
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	ai = no
+	
+	option = {
+		name = "DODOK"
+		
+		any_demesne_title = {
+			limit = {
+				tier = BARON
+				controlled_by = ROOT
+			}
+
+			create_character = {
+				random_traits = no
+				dynasty = NONE
+				female = no
+				age = 16
+				culture = ROOT
+				religion = ROOT
+				trait = midas_touched
+				trait = brave
+				trait = content
+				trait = just
+				trait = dod_vassal
+				trait = patient
+				attributes = {
+					diplomacy = 8
+					martial = 8
+					stewardship = 8
+					intrigue = 8
+					learning = 8
+				}
+			}
+			new_character = {
+				gain_title = FROM
+			}
+		}
+	}
+
+	option = {
+		name = "DODCANCEL"
+	}
+}
