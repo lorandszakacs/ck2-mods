@@ -127,6 +127,7 @@ character_event = {
 			any_demesne_title = {
 				usurp_title = ROOT
 			}
+			death = {death_reason = death_natural}
 		}
 	}
 	
@@ -163,6 +164,7 @@ character_event = {
 			any_demesne_title = {
 				usurp_title = ROOT
 			}
+			death = {death_reason = death_natural}
 		}
 	}
 	
