@@ -30,8 +30,6 @@ dod_player = {
 		speed = 0.7
 		retreat = 0.7
 	}
-
-	build_time_modifier = -0.5
 }
 
 ########################################################
@@ -60,7 +58,7 @@ dod_builder = {
 	random = no
 	customizer = no	
 
-	build_time_modifier = -0.7
+	build_time_modifier = -0.6
 }
 ########################################################
 
