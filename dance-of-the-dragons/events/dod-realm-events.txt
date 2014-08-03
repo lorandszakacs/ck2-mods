@@ -257,13 +257,14 @@ character_event = {
 		any_demesne_title = {
 			limit = {
 				OR = {
-					holding_type = castle 
+					# we are avoiding castle because counties would go into that categoty.
 					holding_type = city
 					holding_type = temple
 				}
 			}
 
 			create_character = {
+				name = "Vassal"
 				random_traits = no
 				dynasty = NONE
 				female = no
