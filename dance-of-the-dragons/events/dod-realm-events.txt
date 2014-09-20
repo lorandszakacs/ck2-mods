@@ -9,11 +9,9 @@ namespace = dodRealm
 #####################################################################################################
 #####################################################################################################
 
-#Builds basic buildings in all your holdings.
-
 character_event = {
 	id = dodRealm.0
-	desc = dodRealm.0.desc
+	desc = "Build cities everywhere!"
 	picture = GFX_evt_emissary
 	
 	is_triggered_only = yes
@@ -22,93 +20,47 @@ character_event = {
 	option = {
 		name = "DODOK"
 		
-		any_demesne_title = {
-			
-			if = {
-				limit = { holding_type = castle }
-				
-				#Castle Wall:
-				add_building = ca_wall_1
-				add_building = ca_wall_2
-				
-				#Fortifications:
-				add_building = ca_wall_q_1
-				add_building = ca_wall_q_2
-				
-				#Castle Town:
-				add_building = ca_town_1
-				add_building = ca_town_2
-				
-				#Castle Shipyard, we can add it, it will be removed if not supported anyway.
-				add_building = ca_shipyard_1
-				add_building = ca_shipyard_2
+		any_realm_province = {
+			limit = {
+				has_empty_holding = yes
 			}
-			
-			######################################
-			#####       build in city         ####
-			######################################
-			if = {
-				limit = { holding_type = city }
-				
-				#City Walls:
-				add_building = ct_wall_1
-				add_building = ct_wall_2
-				
-				#City Fortifications:
-				add_building = ct_wall_q_1
-				add_building = ct_wall_q_2
-				
-				#Town Market
-				add_building = ct_marketplace_1
-				add_building = ct_marketplace_2
-				
-				#Port
-				add_building = ct_port_1
-				add_building = ct_port_2
-				
-				#University
-				add_building = ct_university_1
-				
-				#Shipyard
-				add_building = ct_shipyard_1
-			}
-			
-			######################################
-			#####      build in temple        ####
-			######################################
-			if = {
-				limit = { holding_type = temple }
-				
-				#Temple Walls:
-				add_building = tp_wall_1
-				add_building = tp_wall_2
-				
-				#Temple Fortifications:
-				add_building = tp_wall_q_1
-				add_building = tp_wall_q_2
-				
-				#Temple Town
-				add_building = tp_town_1
-				add_building = tp_town_2
-				
-				#Monastery
-				add_building = tp_monastery_1
-				
-				#Monastic School
-				add_building = tp_school_1
-				
-				
-				#Shipyard
-				add_building = tp_shipyard_1
+
+			build_holding = {
+				type = city
+				holder = ROOT
 			}
 		}
-		
-		any_realm_lord = {
-		
+	}
+
+	option = {
+		name = "DODCANCEL"
+	}
+}
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+
+#Builds basic buildings in all your holdings.
+
+character_event = {
+	id = dodRealm.1
+	desc = "Build buildings everywhere!"
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	ai = no
+	
+	option = {
+		name = "DODOK"
+		hidden_tooltip = {
 			any_demesne_title = {
-				######################################
-				#####      build in castle        ####
-				######################################
+				
 				if = {
 					limit = { holding_type = castle }
 					
@@ -182,8 +134,94 @@ character_event = {
 					#Monastic School
 					add_building = tp_school_1
 					
+					
 					#Shipyard
 					add_building = tp_shipyard_1
+				}
+			}
+			
+			any_realm_lord = {
+			
+				any_demesne_title = {
+					######################################
+					#####      build in castle        ####
+					######################################
+					if = {
+						limit = { holding_type = castle }
+						
+						#Castle Wall:
+						add_building = ca_wall_1
+						add_building = ca_wall_2
+						
+						#Fortifications:
+						add_building = ca_wall_q_1
+						add_building = ca_wall_q_2
+						
+						#Castle Town:
+						add_building = ca_town_1
+						add_building = ca_town_2
+						
+						#Castle Shipyard, we can add it, it will be removed if not supported anyway.
+						add_building = ca_shipyard_1
+						add_building = ca_shipyard_2
+					}
+					
+					######################################
+					#####       build in city         ####
+					######################################
+					if = {
+						limit = { holding_type = city }
+						
+						#City Walls:
+						add_building = ct_wall_1
+						add_building = ct_wall_2
+						
+						#City Fortifications:
+						add_building = ct_wall_q_1
+						add_building = ct_wall_q_2
+						
+						#Town Market
+						add_building = ct_marketplace_1
+						add_building = ct_marketplace_2
+						
+						#Port
+						add_building = ct_port_1
+						add_building = ct_port_2
+						
+						#University
+						add_building = ct_university_1
+						
+						#Shipyard
+						add_building = ct_shipyard_1
+					}
+					
+					######################################
+					#####      build in temple        ####
+					######################################
+					if = {
+						limit = { holding_type = temple }
+						
+						#Temple Walls:
+						add_building = tp_wall_1
+						add_building = tp_wall_2
+						
+						#Temple Fortifications:
+						add_building = tp_wall_q_1
+						add_building = tp_wall_q_2
+						
+						#Temple Town
+						add_building = tp_town_1
+						add_building = tp_town_2
+						
+						#Monastery
+						add_building = tp_monastery_1
+						
+						#Monastic School
+						add_building = tp_school_1
+						
+						#Shipyard
+						add_building = tp_shipyard_1
+					}
 				}
 			}
 		}
@@ -193,44 +231,7 @@ character_event = {
 	}
 }
 
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
 
-#Builds basic buildings in all your holdings.
-
-character_event = {
-	id = dodRealm.1
-	desc = "Build cities everywhere!"
-	picture = GFX_evt_emissary
-	
-	is_triggered_only = yes
-	ai = no
-	
-	option = {
-		name = "DODOK"
-		
-		any_realm_province = {
-			limit = {
-				has_empty_holding = yes
-			}
-
-			build_holding = {
-				type = city
-				holder = ROOT
-			}
-		}
-	}
-
-	option = {
-		name = "DODCANCEL"
-	}
-}
 
 #####################################################################################################
 #####################################################################################################
@@ -240,12 +241,10 @@ character_event = {
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
-
-#Builds basic buildings in all your holdings.
 
 character_event = {
 	id = dodRealm.2
-	desc = "Hand out titles to vassals!"
+	desc = "Hand out BARONY titles to."
 	picture = GFX_evt_emissary
 	
 	is_triggered_only = yes
@@ -260,6 +259,67 @@ character_event = {
 					# we are avoiding castle because counties would go into that categoty.
 					holding_type = city
 					holding_type = temple
+				}
+			}
+
+			create_character = {
+				name = "Vassal"
+				random_traits = no
+				dynasty = NONE
+				female = no
+				age = 16
+				culture = ROOT
+				religion = ROOT
+				trait = midas_touched
+				trait = brave
+				trait = content
+				trait = just
+				trait = dod_vassal
+				trait = patient
+				attributes = {
+					diplomacy = 8
+					martial = 5
+					stewardship = 8
+					intrigue = 8
+					learning = 8
+				}
+			}
+			new_character = {
+				gain_title = PREV
+			}
+		} #any title
+	}
+
+	option = {
+		name = "DODCANCEL"
+	}
+}
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+
+character_event = {
+	id = dodRealm.3
+	desc = "Hand out COUNTY titles to, except in the capital."
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	ai = no
+	
+	option = {
+		name = "DODOK"
+		
+		any_demesne_title = {
+			limit = {
+				AND = {
+					tier = COUNT
+					is_capital = no
 				}
 			}
 
