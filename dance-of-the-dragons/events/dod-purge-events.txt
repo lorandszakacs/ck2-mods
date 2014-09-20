@@ -20,7 +20,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "DODOK"
+		name = "OK"
 
 		any_courtier = {
 			limit = {
@@ -34,7 +34,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "DODCANCEL"
+		name = "Cancel"
 	}
 }
 
@@ -58,7 +58,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "DODOK"
+		name = "OK"
 
 		any_courtier = {
 			limit = {
@@ -69,6 +69,6 @@ character_event = {
 	}
 	
 	option = {
-		name = "DODCANCEL"
+		name = "Cancel"
 	}
 }

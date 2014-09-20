@@ -20,7 +20,7 @@ character_event = {
 	ai = no
 	
 	option = {
-		name = "DODOK"
+		name = "OK"
 		create_character = {
 			random_traits = no
 			dynasty = NONE
@@ -144,7 +144,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "DODCANCEL"
+		name = "Cancel"
 	}
 }
 
@@ -168,7 +168,7 @@ character_event = {
 	ai = no
 	
 	option = {
-		name = "DODOK"
+		name = "OK"
 		create_character = {
 			random_traits = no
 			dynasty = NONE
@@ -191,6 +191,6 @@ character_event = {
 	}
 	
 	option = {
-		name = "DODCANCEL"
+		name = "Cancel"
 	}
 }

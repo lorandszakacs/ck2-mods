@@ -22,7 +22,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "DODOK"
+		name = "OK"
 
 		any_vassal = {
 			limit = {
@@ -42,7 +42,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "DODCANCEL"
+		name = "Cancel"
 	}
 }
 
@@ -66,8 +66,9 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
+		name = "OK"
 		hidden_tooltip = {
-			name = "DODOK"
+
 
 			any_vassal = {
 				limit = {
@@ -87,7 +88,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "DODCANCEL"
+		name = "Cancel"
 	}
 }
 
@@ -112,7 +113,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "DODOK"
+		name = "OK"
 		hidden_tooltip = {
 			any_realm_lord = {
 				religion = ROOT
@@ -180,6 +181,6 @@ character_event = {
 		}
 	}
 	option = {
-		name = "DODCANCEL"
+		name = "Cancel"
 	}
 }

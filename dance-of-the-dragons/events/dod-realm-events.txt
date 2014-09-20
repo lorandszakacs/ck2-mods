@@ -18,7 +18,7 @@ character_event = {
 	ai = no
 	
 	option = {
-		name = "DODOK"
+		name = "OK"
 		
 		any_realm_province = {
 			limit = {
@@ -33,7 +33,7 @@ character_event = {
 	}
 
 	option = {
-		name = "DODCANCEL"
+		name = "Cancel"
 	}
 }
 
@@ -57,7 +57,7 @@ character_event = {
 	ai = no
 	
 	option = {
-		name = "DODOK"
+		name = "OK"
 		hidden_tooltip = {
 			any_demesne_title = {
 				
@@ -227,7 +227,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "DODCANCEL"
+		name = "Cancel"
 	}
 }
 
@@ -251,7 +251,7 @@ character_event = {
 	ai = no
 	
 	option = {
-		name = "DODOK"
+		name = "OK"
 		
 		any_demesne_title = {
 			limit = {
@@ -291,7 +291,7 @@ character_event = {
 	}
 
 	option = {
-		name = "DODCANCEL"
+		name = "Cancel"
 	}
 }
 
@@ -313,7 +313,7 @@ character_event = {
 	ai = no
 	
 	option = {
-		name = "DODOK"
+		name = "OK"
 		
 		any_demesne_title = {
 			limit = {
@@ -352,6 +352,6 @@ character_event = {
 	}
 
 	option = {
-		name = "DODCANCEL"
+		name = "Cancel"
 	}
 }
