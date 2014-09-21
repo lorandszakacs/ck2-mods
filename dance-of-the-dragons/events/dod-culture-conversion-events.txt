@@ -17,7 +17,10 @@ province_event = {
 				culture = PREV
 			}
 			NOT = { culture = ROOT }
-			trait = dod_player
+			OR = {
+				trait = dod_player
+				trait = dod_vassal
+			}
 		}
 
 		NOT = { # No flipping back to Norse culture before 1150

@@ -13,7 +13,7 @@ namespace = dodPeople
 
 character_event = {
 	id = dodPeople.0
-	desc = dodPeople.0.desc
+	desc = "Hire an entire council."
 	picture = GFX_evt_emissary
 	
 	is_triggered_only = yes
@@ -37,6 +37,7 @@ character_event = {
 			trait = brave
 			trait = just
 			trait = gregarious
+			trait = vassal
 			attributes = {
 				diplomacy = 20
 				martial = 0
@@ -61,6 +62,7 @@ character_event = {
 			trait = brave
 			trait = just
 			trait = gregarious
+			trait = vassal
 			attributes = {
 				diplomacy = 0
 				martial = 20
@@ -85,6 +87,7 @@ character_event = {
 			trait = brave
 			trait = just
 			trait = gregarious
+			trait = vassal
 			attributes = {
 				diplomacy = 0
 				martial = 0
@@ -109,11 +112,12 @@ character_event = {
 			trait = brave
 			trait = just
 			trait = gregarious
+			trait = vassal
 			attributes = {
 				diplomacy = 0
 				martial = 0
 				stewardship = 0
-				intrigue = 20
+				intrigue = 25
 				learning = 0
 			}
 		}
@@ -133,6 +137,7 @@ character_event = {
 			trait = brave
 			trait = just
 			trait = gregarious
+			trait = vassal
 			attributes = {
 				diplomacy = 5
 				martial = 0
@@ -157,11 +162,9 @@ character_event = {
 #####################################################################################################
 #####################################################################################################
 
-# hire 1 GENERAL
-
 character_event = {
 	id = dodPeople.1
-	desc = dodPeople.1.desc
+	desc = "Hire a brilliant general"
 	picture = GFX_evt_emissary
 	
 	is_triggered_only = yes
@@ -169,6 +172,90 @@ character_event = {
 	
 	option = {
 		name = "OK"
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = brilliant_strategist
+			trait = brave
+			trait = dod_commander
+			trait = patient
+			attributes = {
+				diplomacy = 8
+				martial = 8
+				stewardship = 8
+				intrigue = 8
+				learning = 8
+			}
+		}
+	}
+	
+	option = {
+		name = "Cancel"
+	}
+}
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+character_event = {
+	id = dodPeople.2
+	desc = "Hire 3 brilliant generals"
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	ai = no
+	
+	option = {
+		name = "OK"
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = brilliant_strategist
+			trait = brave
+			trait = dod_commander
+			trait = patient
+			attributes = {
+				diplomacy = 8
+				martial = 8
+				stewardship = 8
+				intrigue = 8
+				learning = 8
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = brilliant_strategist
+			trait = brave
+			trait = dod_commander
+			trait = patient
+			attributes = {
+				diplomacy = 8
+				martial = 8
+				stewardship = 8
+				intrigue = 8
+				learning = 8
+			}
+		}
+
 		create_character = {
 			random_traits = no
 			dynasty = NONE

@@ -13,7 +13,7 @@ namespace = dodPurge
 
 character_event = {
 	id = dodPurge.0
-	desc = "dodPurge.0.desc"
+	desc = "Kill all courtiers except members of your dynasty, the councilors, married characters and commanders."
 	picture = GFX_evt_emissary
 	
 	ai = no
@@ -51,7 +51,7 @@ character_event = {
 
 character_event = {
 	id = dodPurge.1
-	desc = "dodPurge.1.desc"
+	desc = "Kill all courtiers except the members of your dynasty."
 	picture = GFX_evt_emissary
 	
 	ai = no
