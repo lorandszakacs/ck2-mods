@@ -11,7 +11,7 @@ namespace = dodDistribute
 
 character_event = {
 	id = dodDistribute.0
-	desc = "Hand out BARONY titles to."
+	desc = "Hand out BARONY titles."
 	picture = GFX_evt_emissary
 	
 	is_triggered_only = yes
@@ -73,7 +73,7 @@ character_event = {
 
 character_event = {
 	id = dodDistribute.1
-	desc = "Hand out COUNTY titles to, except in the capital."
+	desc = "Hand out COUNTY titles, except in the capital."
 	picture = GFX_evt_emissary
 	
 	is_triggered_only = yes

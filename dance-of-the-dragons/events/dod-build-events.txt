@@ -79,6 +79,16 @@ character_event = {
 					add_building = tb_market_town_3
 					add_building = tb_market_town_4
 					
+					#War_Camp:
+					add_building = tb_war_camp_1
+					add_building = tb_war_camp_2
+					add_building = tb_war_camp_3
+					add_building = tb_war_camp_4
+
+					#Training Groungs:
+					add_building = tb_training_grounds_1
+					add_building = tb_training_grounds_2
+
 					#Shipyard
 					add_building = tb_shipyard_1
 					add_building = tb_shipyard_2
