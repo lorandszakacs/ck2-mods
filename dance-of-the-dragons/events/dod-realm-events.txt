@@ -60,7 +60,33 @@ character_event = {
 		name = "OK"
 		hidden_tooltip = {
 			any_demesne_title = {
-				
+
+				######################################
+				#####       build in tribal       ####
+				######################################
+				if = {
+					limit = { holding_type = tribal }
+					
+					#Castle Wall:
+					add_building = tb_hillfort_1
+					add_building = tb_hillfort_2
+					add_building = tb_hillfort_3
+					add_building = tb_hillfort_4
+					
+					#Market:
+					add_building = tb_market_town_1
+					add_building = tb_market_town_2
+					add_building = tb_market_town_3
+					add_building = tb_market_town_4
+					
+					#Shipyard
+					add_building = tb_shipyard_1
+					add_building = tb_shipyard_2
+				}
+
+				######################################
+				#####       build in castle       ####
+				######################################
 				if = {
 					limit = { holding_type = castle }
 					
@@ -143,6 +169,30 @@ character_event = {
 			any_realm_lord = {
 			
 				any_demesne_title = {
+
+					######################################
+					#####       build in tribal       ####
+					######################################
+					if = {
+						limit = { holding_type = tribal }
+						
+						#Castle Wall:
+						add_building = tb_hillfort_1
+						add_building = tb_hillfort_2
+						add_building = tb_hillfort_3
+						add_building = tb_hillfort_4
+						
+						#Market:
+						add_building = tb_market_town_1
+						add_building = tb_market_town_2
+						add_building = tb_market_town_3
+						add_building = tb_market_town_4
+						
+						#Shipyard
+						add_building = tb_shipyard_1
+						add_building = tb_shipyard_2
+					}
+
 					######################################
 					#####      build in castle        ####
 					######################################
@@ -319,7 +369,9 @@ character_event = {
 			limit = {
 				AND = {
 					tier = COUNT
-					is_capital = no
+					location = {
+						is_capital = no
+					}
 				}
 			}
 
