@@ -1,4 +1,4 @@
-namespace = dodPurge
+namespace = dodUsurp
 
 #####################################################################################################
 #####################################################################################################
@@ -9,11 +9,11 @@ namespace = dodPurge
 #####################################################################################################
 #####################################################################################################
 
-#All your unlanded courtiers die, except family members, councilors and commanders.
+#Usurp all the titles in your realm
 
 character_event = {
-	id = dodPurge.0
-	desc = "Kill all courtiers except members of your dynasty, the councilors, spouses of your dynasty and commanders."
+	id = dodUsurp.0
+	desc = "Usurp the titles in the realm from vassals that do not have the dod_vassal trait"
 	picture = GFX_evt_emissary
 	
 	ai = no
@@ -22,12 +22,18 @@ character_event = {
 	option = {
 		name = "OK"
 
-		any_courtier = {
+		any_vassal = {
 			limit = {
-				NOT = {dynasty = ROOT}
-				NOT = {is_councillor = yes}
-				NOT = {trait = dod_commander}
-				NOT = {is_main_spouse = yes}
+				OR = {
+					tier = KING
+					tier = DUKE
+					tier = COUNT
+					tier = BARON
+				}
+				NOT = {trait = dod_vassal}
+			}
+			any_demesne_title = {
+				usurp_title = ROOT
 			}
 			death = {death_reason = death_natural}
 		}
@@ -47,11 +53,11 @@ character_event = {
 #####################################################################################################
 #####################################################################################################
 
-#All your unlanded courtiers die, except family members, and spouses.
+#Usurp all the titles in your realm
 
 character_event = {
-	id = dodPurge.1
-	desc = "Kill all courtiers except members of your dynasty, and spouses of your dynasty."
+	id = dodUsurp.1
+	desc = "FORCE usurp ALL the titles of your direct vassals. Will remove them even if they have the Vassal trait."
 	picture = GFX_evt_emissary
 	
 	ai = no
@@ -59,48 +65,23 @@ character_event = {
 	
 	option = {
 		name = "OK"
+		hidden_tooltip = {
 
-		any_courtier = {
-			limit = {
-				NOT = {dynasty = ROOT}
-				NOT = {is_main_spouse = yes}
+
+			any_vassal = {
+				limit = {
+					OR = {
+						tier = KING
+						tier = DUKE
+						tier = COUNT
+						tier = BARON
+					}
+				}
+				any_demesne_title = {
+					usurp_title = ROOT
+				}
+				death = {death_reason = death_natural}
 			}
-			death = {death_reason = death_natural}
-		}
-	}
-	
-	option = {
-		name = "Cancel"
-	}
-}
-
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-
-#Hard purge, everyone except dynasty members die.
-
-character_event = {
-	id = dodPurge.9
-	desc = "Kill all courtiers except the members of your dynasty."
-	picture = GFX_evt_emissary
-	
-	ai = no
-	is_triggered_only = yes
-	
-	option = {
-		name = "OK"
-
-		any_courtier = {
-			limit = {
-				NOT = {dynasty = ROOT}
-			}
-			death = {death_reason = death_natural}
 		}
 	}
 	

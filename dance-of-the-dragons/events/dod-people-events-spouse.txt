@@ -107,3 +107,601 @@ character_event = {
 		name = "Cancel"
 	}
 }
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+
+# hire ten female spouses
+
+character_event = {
+	id = dodSpouse.10
+	desc = "Hire ten female spouses."
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	ai = no
+	
+	option = {
+		name = "OK"
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = yes
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = yes
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = yes
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = yes
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = yes
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = yes
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = yes
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = yes
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = yes
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = yes
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+	}
+	
+	option = {
+		name = "Cancel"
+	}
+}
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+
+# hire ten male spouses
+
+character_event = {
+	id = dodSpouse.20
+	desc = "Hire ten male spouses."
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	ai = no
+	
+	option = {
+		name = "OK"
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = genius
+			trait = fair
+			trait = strong
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			attributes = {
+				diplomacy = 10
+				martial = 10
+				stewardship = 10
+				intrigue = 15
+				learning = 10
+			}
+		}
+
+	}
+	
+	option = {
+		name = "Cancel"
+	}
+}

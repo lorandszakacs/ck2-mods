@@ -1,97 +1,5 @@
 namespace = dodVassal
 
-
-
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-
-#Usurp all the titles in your realm
-
-character_event = {
-	id = dodVassal.0
-	desc = "Usurp the titles in the realm from vassals that do not have the dod_vassal trait"
-	picture = GFX_evt_emissary
-	
-	ai = no
-	is_triggered_only = yes
-	
-	option = {
-		name = "OK"
-
-		any_vassal = {
-			limit = {
-				OR = {
-					tier = KING
-					tier = DUKE
-					tier = COUNT
-					tier = BARON
-				}
-				NOT = {trait = dod_vassal}
-			}
-			any_demesne_title = {
-				usurp_title = ROOT
-			}
-			death = {death_reason = death_natural}
-		}
-	}
-	
-	option = {
-		name = "Cancel"
-	}
-}
-
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-
-#Usurp all the titles in your realm
-
-character_event = {
-	id = dodVassal.8
-	desc = "FORCE usurp ALL the titles of your direct vassals. Will remove them even if they have the Vassal trait."
-	picture = GFX_evt_emissary
-	
-	ai = no
-	is_triggered_only = yes
-	
-	option = {
-		name = "OK"
-		hidden_tooltip = {
-
-
-			any_vassal = {
-				limit = {
-					OR = {
-						tier = KING
-						tier = DUKE
-						tier = COUNT
-						tier = BARON
-					}
-				}
-				any_demesne_title = {
-					usurp_title = ROOT
-				}
-				death = {death_reason = death_natural}
-			}
-		}
-	}
-	
-	option = {
-		name = "Cancel"
-	}
-}
-
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
@@ -106,7 +14,7 @@ character_event = {
 #Gives landed characters the trait "vassal".
 
 character_event = {
-	id = dodVassal.9
+	id = dodVassal.0
 	desc = "Converts all the vassals in your realm to something better. Does not kill anyone."
 	picture = GFX_evt_emissary
 	
@@ -123,6 +31,8 @@ character_event = {
 				add_trait = just
 				remove_trait = paranoid
 				remove_trait = cruel
+				remove_trait = lisp
+				remove_trait = maimed
 				remove_trait = impaler
 				remove_trait = stressed
 				remove_trait = depressed
@@ -154,6 +64,8 @@ character_event = {
 				culture = ROOT
 				remove_trait = paranoid
 				remove_trait = cruel
+				remove_trait = lisp
+				remove_trait = maimed
 				remove_trait = impaler
 				remove_trait = stressed
 				remove_trait = depressed

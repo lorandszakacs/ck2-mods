@@ -1,4 +1,4 @@
-namespace = dodPurge
+namespace = dodDistribute
 
 #####################################################################################################
 #####################################################################################################
@@ -8,31 +8,55 @@ namespace = dodPurge
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
-
-#All your unlanded courtiers die, except family members, councilors and commanders.
 
 character_event = {
-	id = dodPurge.0
-	desc = "Kill all courtiers except members of your dynasty, the councilors, spouses of your dynasty and commanders."
+	id = dodDistribute.0
+	desc = "Hand out BARONY titles to."
 	picture = GFX_evt_emissary
 	
-	ai = no
 	is_triggered_only = yes
+	ai = no
 	
 	option = {
 		name = "OK"
-
-		any_courtier = {
+		
+		any_demesne_title = {
 			limit = {
-				NOT = {dynasty = ROOT}
-				NOT = {is_councillor = yes}
-				NOT = {trait = dod_commander}
-				NOT = {is_main_spouse = yes}
+				OR = {
+					# we are avoiding castle because counties would go into that categoty.
+					holding_type = city
+					holding_type = temple
+				}
 			}
-			death = {death_reason = death_natural}
-		}
+
+			create_character = {
+				name = "Vassal"
+				random_traits = no
+				dynasty = NONE
+				female = no
+				age = 16
+				culture = ROOT
+				religion = ROOT
+				trait = midas_touched
+				trait = brave
+				trait = content
+				trait = just
+				trait = dod_vassal
+				trait = patient
+				attributes = {
+					diplomacy = 8
+					martial = 5
+					stewardship = 8
+					intrigue = 8
+					learning = 12
+				}
+			}
+			new_character = {
+				gain_title = PREV
+			}
+		} #any title
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
@@ -47,28 +71,55 @@ character_event = {
 #####################################################################################################
 #####################################################################################################
 
-#All your unlanded courtiers die, except family members, and spouses.
-
 character_event = {
-	id = dodPurge.1
-	desc = "Kill all courtiers except members of your dynasty, and spouses of your dynasty."
+	id = dodDistribute.1
+	desc = "Hand out COUNTY titles to, except in the capital."
 	picture = GFX_evt_emissary
 	
-	ai = no
 	is_triggered_only = yes
+	ai = no
 	
 	option = {
 		name = "OK"
-
-		any_courtier = {
+		
+		any_demesne_title = {
 			limit = {
-				NOT = {dynasty = ROOT}
-				NOT = {is_main_spouse = yes}
+				AND = {
+					tier = COUNT
+					location = {
+						is_capital = no
+					}
+				}
 			}
-			death = {death_reason = death_natural}
-		}
+
+			create_character = {
+				name = "Vassal"
+				random_traits = no
+				dynasty = NONE
+				female = no
+				age = 16
+				culture = ROOT
+				religion = ROOT
+				trait = midas_touched
+				trait = brave
+				trait = content
+				trait = just
+				trait = dod_vassal
+				trait = patient
+				attributes = {
+					diplomacy = 8
+					martial = 5
+					stewardship = 8
+					intrigue = 8
+					learning = 12
+				}
+			}
+			new_character = {
+				gain_title = PREV
+			}
+		} #any title
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
@@ -82,29 +133,3 @@ character_event = {
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
-
-#Hard purge, everyone except dynasty members die.
-
-character_event = {
-	id = dodPurge.9
-	desc = "Kill all courtiers except the members of your dynasty."
-	picture = GFX_evt_emissary
-	
-	ai = no
-	is_triggered_only = yes
-	
-	option = {
-		name = "OK"
-
-		any_courtier = {
-			limit = {
-				NOT = {dynasty = ROOT}
-			}
-			death = {death_reason = death_natural}
-		}
-	}
-	
-	option = {
-		name = "Cancel"
-	}
-}

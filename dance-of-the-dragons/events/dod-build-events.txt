@@ -1,4 +1,4 @@
-namespace = dodRealm
+namespace = dodBuild
 
 #####################################################################################################
 #####################################################################################################
@@ -10,7 +10,7 @@ namespace = dodRealm
 #####################################################################################################
 
 character_event = {
-	id = dodRealm.0
+	id = dodBuild.0
 	desc = "Build cities everywhere!"
 	picture = GFX_evt_emissary
 	
@@ -49,7 +49,7 @@ character_event = {
 #Builds basic buildings in all your holdings.
 
 character_event = {
-	id = dodRealm.1
+	id = dodBuild.1
 	desc = "Build buildings everywhere!"
 	picture = GFX_evt_emissary
 	
@@ -282,7 +282,6 @@ character_event = {
 }
 
 
-
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
@@ -291,119 +290,3 @@ character_event = {
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
-
-character_event = {
-	id = dodRealm.2
-	desc = "Hand out BARONY titles to."
-	picture = GFX_evt_emissary
-	
-	is_triggered_only = yes
-	ai = no
-	
-	option = {
-		name = "OK"
-		
-		any_demesne_title = {
-			limit = {
-				OR = {
-					# we are avoiding castle because counties would go into that categoty.
-					holding_type = city
-					holding_type = temple
-				}
-			}
-
-			create_character = {
-				name = "Vassal"
-				random_traits = no
-				dynasty = NONE
-				female = no
-				age = 16
-				culture = ROOT
-				religion = ROOT
-				trait = midas_touched
-				trait = brave
-				trait = content
-				trait = just
-				trait = dod_vassal
-				trait = patient
-				attributes = {
-					diplomacy = 8
-					martial = 5
-					stewardship = 8
-					intrigue = 8
-					learning = 8
-				}
-			}
-			new_character = {
-				gain_title = PREV
-			}
-		} #any title
-	}
-
-	option = {
-		name = "Cancel"
-	}
-}
-
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-
-character_event = {
-	id = dodRealm.3
-	desc = "Hand out COUNTY titles to, except in the capital."
-	picture = GFX_evt_emissary
-	
-	is_triggered_only = yes
-	ai = no
-	
-	option = {
-		name = "OK"
-		
-		any_demesne_title = {
-			limit = {
-				AND = {
-					tier = COUNT
-					location = {
-						is_capital = no
-					}
-				}
-			}
-
-			create_character = {
-				name = "Vassal"
-				random_traits = no
-				dynasty = NONE
-				female = no
-				age = 16
-				culture = ROOT
-				religion = ROOT
-				trait = midas_touched
-				trait = brave
-				trait = content
-				trait = just
-				trait = dod_vassal
-				trait = patient
-				attributes = {
-					diplomacy = 8
-					martial = 5
-					stewardship = 8
-					intrigue = 8
-					learning = 8
-				}
-			}
-			new_character = {
-				gain_title = PREV
-			}
-		} #any title
-	}
-
-	option = {
-		name = "Cancel"
-	}
-}
