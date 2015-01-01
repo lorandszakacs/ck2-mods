@@ -1,0 +1,154 @@
+namespace = dodCouncil
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+
+# hire COUNCIL
+
+character_event = {
+	id = dodCouncil.0
+	desc = "Hire an entire council."
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	ai = no
+	
+	option = {
+		name = "OK"
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = grey_eminence
+			trait = dance_vassal
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			trait = vassal
+			attributes = {
+				diplomacy = 20
+				martial = 0
+				stewardship = 0
+				intrigue = 0
+				learning = 0
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = brilliant_strategist
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			trait = vassal
+			attributes = {
+				diplomacy = 0
+				martial = 20
+				stewardship = 0
+				intrigue = 0
+				learning = 0
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = midas_touched
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			trait = vassal
+			attributes = {
+				diplomacy = 0
+				martial = 0
+				stewardship = 20
+				intrigue = 0
+				learning = 0
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = elusive_shadow
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			trait = vassal
+			attributes = {
+				diplomacy = 0
+				martial = 0
+				stewardship = 0
+				intrigue = 25
+				learning = 0
+			}
+		}
+
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 16
+			culture = ROOT
+			religion = ROOT
+			trait = mastermind_theologian
+			trait = diligent
+			trait = kind
+			trait = patient
+			trait = humble
+			trait = brave
+			trait = just
+			trait = gregarious
+			trait = vassal
+			attributes = {
+				diplomacy = 5
+				martial = 0
+				stewardship = 0
+				intrigue = 0
+				learning = 20
+			}
+		}
+	}
+	
+	option = {
+		name = "Cancel"
+	}
+}
