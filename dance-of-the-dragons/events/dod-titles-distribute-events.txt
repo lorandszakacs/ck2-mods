@@ -23,9 +23,25 @@ character_event = {
 		any_demesne_title = {
 			limit = {
 				OR = {
-					# we are avoiding castle because counties would go into that categoty.
-					holding_type = city
-					holding_type = temple
+					AND = {
+						is_republic = yes
+						OR = {
+							holding_type = castle
+							holding_type = temple
+							AND = {
+								location = { is_capital = no }
+								holding_type = city
+							}
+						}
+					}
+					
+					AND = {
+						is_republic = no
+						OR = {
+							holding_type = city
+							holding_type = temple
+						}
+					}
 				}
 			}
 
