@@ -27,7 +27,7 @@ character_event = {
 				NOT = {dynasty = ROOT}
 				NOT = {is_councillor = yes}
 				NOT = {trait = dod_commander}
-				NOT = {is_main_spouse = yes}
+				NOT = { spouse = { dynasty = ROOT } }
 			}
 			death = {death_reason = death_natural}
 		}
@@ -47,7 +47,7 @@ character_event = {
 #####################################################################################################
 #####################################################################################################
 
-#All your unlanded courtiers die, except family members, and spouses.
+#All your unlanded courtiers die, except dynasty members and their spouses.
 
 character_event = {
 	id = dodPurge.1
@@ -63,7 +63,7 @@ character_event = {
 		any_courtier = {
 			limit = {
 				NOT = {dynasty = ROOT}
-				NOT = {is_main_spouse = yes}
+				NOT = { spouse = { dynasty = ROOT } }
 			}
 			death = {death_reason = death_natural}
 		}
