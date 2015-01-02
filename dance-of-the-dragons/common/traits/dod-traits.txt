@@ -29,6 +29,8 @@ dod_player = {
 		
 		speed = 0.7
 		retreat = 0.7
+
+		combat_rating = 10
 	}
 }
 
