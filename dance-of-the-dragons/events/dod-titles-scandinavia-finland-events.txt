@@ -38,13 +38,15 @@ character_event = {
 
 		c_savolaks = { usurp_title = ROOT }
 
+		c_kemi = { usurp_title = ROOT }
+
 		######################################
 		####        Duchy of Estonia       ####
 		######################################
 
 		c_reval = { usurp_title = ROOT }
 
-		c_dorpat = { usurp_title = ROOT }
+		c_narva = { usurp_title = ROOT }
 
 		c_vodi = { usurp_title = ROOT }
 

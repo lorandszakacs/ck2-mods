@@ -32,7 +32,7 @@ character_event = {
 
 		c_angermanland = { usurp_title = ROOT }
 
-		c_madelpad = { usurp_title = ROOT }
+		c_medelpad = { usurp_title = ROOT }
 
 		c_halsingland = { usurp_title = ROOT }
 
