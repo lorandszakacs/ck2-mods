@@ -1,0 +1,66 @@
+namespace = dodSelf
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+
+# Removes negative traits from your character.
+
+character_event = {
+	id = dodSelf.0
+	desc = "Removes negative traits from yourself."
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK"
+		
+		add_trait = dod_player
+		add_trait = dod_commander
+		add_trait = just
+		add_trait = genius
+		add_trait = fair
+		add_trait = strong
+		add_trait = brave
+		add_trait = gregarious
+
+		remove_trait = quick
+		
+		remove_trait = paranoid
+		remove_trait = cruel
+		remove_trait = lisp
+		remove_trait = maimed
+		remove_trait = impaler
+		remove_trait = stressed
+		remove_trait = depressed
+		remove_trait = lunatic
+		remove_trait = possessed
+		remove_trait = syphilitic
+		remove_trait = slothful
+		remove_trait = imbecile
+		remove_trait = wroth
+		remove_trait = gluttonous
+		remove_trait = greedy
+		remove_trait = ambitious
+		remove_trait = envious
+		remove_trait = ill
+		remove_trait = incapable
+		remove_trait = proud
+		remove_trait = deceitful
+		remove_trait = craven
+		remove_trait = shy
+		remove_trait = arbitrary
+		remove_trait = cynical
+		remove_trait = lustful
+		remove_trait = leper
+	}
+	option = {
+		name = "Cancel"
+	}
+}
