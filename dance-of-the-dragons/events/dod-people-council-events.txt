@@ -162,3 +162,189 @@ character_event = {
 		name = "Cancel"
 	}
 }
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+
+# hire COUNCIL
+
+character_event = {
+	id = dodCouncil.1
+	desc = "Hire an entire for all your vassals."
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	ai = no
+	
+	option = {
+		name = "OK"
+
+		any_realm_lord = {
+
+			limit = {
+				NOT = { trait = dod_player }
+				OR = {
+					tier = COUNT
+					tier = DUKE
+					tier = KING
+				}
+			}
+
+			any_courtier = {
+				limit = {
+					NOT = { dynasty = ROOT }
+					NOT = { trait = dod_vassal }
+					NOT = { spouse = { dynasty = ROOT } }
+					NOT = { spouse = { character = PREV} }
+				}
+				death = {death_reason = death_natural}
+			}
+
+			create_character = {
+				random_traits = no
+				dynasty = NONE
+				female = no
+				age = 16
+				health = 10.0
+				fertility = -50.0
+				culture = ROOT
+				religion = ROOT
+				trait = grey_eminence
+				trait = dance_vassal
+				trait = diligent
+				trait = kind
+				trait = patient
+				trait = humble
+				trait = brave
+				trait = just
+				trait = gregarious
+				trait = vassal
+				attributes = {
+					diplomacy = 10
+					martial = 0
+					stewardship = 0
+					intrigue = 0
+					learning = 0
+				}
+			}
+
+			create_character = {
+				random_traits = no
+				dynasty = NONE
+				female = no
+				age = 16
+				health = 10.0
+				fertility = -50.0
+				culture = ROOT
+				religion = ROOT
+				trait = brilliant_strategist
+				trait = diligent
+				trait = kind
+				trait = patient
+				trait = humble
+				trait = brave
+				trait = just
+				trait = gregarious
+				trait = vassal
+				attributes = {
+					diplomacy = 0
+					martial = 10
+					stewardship = 0
+					intrigue = 0
+					learning = 0
+				}
+			}
+
+			create_character = {
+				random_traits = no
+				dynasty = NONE
+				female = no
+				age = 16
+				health = 10.0
+				fertility = -50.0
+				culture = ROOT
+				religion = ROOT
+				trait = midas_touched
+				trait = diligent
+				trait = kind
+				trait = patient
+				trait = humble
+				trait = brave
+				trait = just
+				trait = gregarious
+				trait = vassal
+				attributes = {
+					diplomacy = 0
+					martial = 0
+					stewardship = 10
+					intrigue = 0
+					learning = 0
+				}
+			}
+
+			create_character = {
+				random_traits = no
+				dynasty = NONE
+				female = no
+				age = 16
+				health = 10.0
+				fertility = -50.0
+				culture = ROOT
+				religion = ROOT
+				trait = elusive_shadow
+				trait = diligent
+				trait = kind
+				trait = patient
+				trait = humble
+				trait = brave
+				trait = just
+				trait = gregarious
+				trait = vassal
+				attributes = {
+					diplomacy = 0
+					martial = 0
+					stewardship = 0
+					intrigue = 10
+					learning = 0
+				}
+			}
+
+			create_character = {
+				random_traits = no
+				dynasty = NONE
+				female = no
+				age = 16
+				health = 10.0
+				fertility = -50.0
+				culture = ROOT
+				religion = ROOT
+				trait = mastermind_theologian
+				trait = diligent
+				trait = kind
+				trait = patient
+				trait = humble
+				trait = brave
+				trait = just
+				trait = gregarious
+				trait = vassal
+				attributes = {
+					diplomacy = 5
+					martial = 0
+					stewardship = 0
+					intrigue = 0
+					learning = 20
+				}
+			}
+		} # any realm lord
+	}
+	
+	option = {
+		name = "Cancel"
+	}
+}
