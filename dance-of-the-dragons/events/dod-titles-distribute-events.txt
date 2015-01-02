@@ -118,7 +118,7 @@ character_event = {
 
 character_event = {
 	id = dodDistribute.1
-	desc = "Hand out COUNTY titles, except in the capital."
+	desc = "Hand out COUNTY titles, except in the capital, and the duchy in which your capital is."
 	picture = GFX_evt_emissary
 	
 	is_triggered_only = yes
@@ -191,6 +191,14 @@ character_event = {
 			}
 		#############################
 		} #any title
+
+		capital_scope = {
+			duchy = {
+				any_de_jure_vassal_title = {
+					usurp_title = ROOT
+				}
+			}
+		}
 	}
 
 	option = {
