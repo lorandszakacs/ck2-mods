@@ -46,7 +46,6 @@ character_event = {
 			}
 
 			create_character = {
-				name = "Vassal"
 				random_traits = no
 				dynasty = NONE
 				female = no
@@ -67,9 +66,39 @@ character_event = {
 					learning = 12
 				}
 			}
+			
 			new_character = {
 				gain_title = PREV
+
+				create_character = {
+					random_traits = no
+					dynasty = NONE
+					female = yes
+					age = 16
+					culture = ROOT
+					religion = ROOT
+					trait = midas_touched
+					trait = brave
+					trait = content
+					trait = just
+					trait = dod_vassal
+					trait = patient
+					attributes = {
+						diplomacy = 8
+						martial = 5
+						stewardship = 8
+						intrigue = 8
+						learning = 20
+					}
+				} # new spouse.
+
+				new_character = {
+					add_spouse = PREV
+				}
+
 			}
+		#############################
+
 		} #any title
 	}
 
@@ -109,7 +138,6 @@ character_event = {
 			}
 
 			create_character = {
-				name = "Vassal"
 				random_traits = no
 				dynasty = NONE
 				female = no
@@ -130,9 +158,38 @@ character_event = {
 					learning = 12
 				}
 			}
+			
 			new_character = {
 				gain_title = PREV
+
+				create_character = {
+					random_traits = no
+					dynasty = NONE
+					female = yes
+					age = 16
+					culture = ROOT
+					religion = ROOT
+					trait = midas_touched
+					trait = brave
+					trait = content
+					trait = just
+					trait = dod_vassal
+					trait = patient
+					attributes = {
+						diplomacy = 8
+						martial = 5
+						stewardship = 8
+						intrigue = 8
+						learning = 20
+					}
+				} # new spouse.
+
+				new_character = {
+					add_spouse = PREV
+				}
+
 			}
+		#############################
 		} #any title
 	}
 
