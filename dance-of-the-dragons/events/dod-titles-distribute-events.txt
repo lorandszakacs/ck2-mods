@@ -24,7 +24,7 @@ character_event = {
 			limit = {
 				OR = {
 					AND = {
-						is_republic = yes
+						ROOT = { is_republic = yes }
 						OR = {
 							holding_type = castle
 							holding_type = temple
@@ -32,7 +32,15 @@ character_event = {
 					}
 					
 					AND = {
-						is_republic = no
+						ROOT = { is_feudal = yes }
+						OR = {
+							holding_type = city
+							holding_type = temple
+						}
+					}
+
+					AND = {
+						ROOT = { is_tribal = yes }
 						OR = {
 							holding_type = city
 							holding_type = temple
@@ -205,6 +213,21 @@ character_event = {
 		capital_scope = {
 			duchy = {
 				any_de_jure_vassal_title = {
+					limit = {
+						OR = {
+							tier = COUNT
+							OR = {
+								AND = {
+									ROOT = { is_republic = yes }
+									holding_type = city
+								}
+								AND = {
+									ROOT = { is_feudal = yes }
+									holding_type = castle
+								}
+							}
+						}
+					}
 					usurp_title = ROOT
 				}
 			}
@@ -254,6 +277,7 @@ character_event = {
 
 			#we randomly select a vassal.
 			any_de_jure_vassal = {
+				limit = { tier = COUNT }
 				gain_title = PREV
 			}
 
