@@ -189,18 +189,13 @@ character_event = {
 						#Castle Wall:
 						add_building = tb_hillfort_1
 						add_building = tb_hillfort_2
-						add_building = tb_hillfort_3
-						add_building = tb_hillfort_4
 						
 						#Market:
 						add_building = tb_market_town_1
 						add_building = tb_market_town_2
-						add_building = tb_market_town_3
-						add_building = tb_market_town_4
 						
 						#Shipyard
 						add_building = tb_shipyard_1
-						add_building = tb_shipyard_2
 					}
 
 					######################################
@@ -243,10 +238,6 @@ character_event = {
 						#Town Market
 						add_building = ct_marketplace_1
 						add_building = ct_marketplace_2
-						
-						#Port
-						add_building = ct_port_1
-						add_building = ct_port_2
 						
 						#University
 						add_building = ct_university_1
