@@ -22,9 +22,14 @@ character_event = {
 	option = {
 		name = "OK"
 
-		e_Scandinavia = {
+		e_scandinavia = {
 			any_de_jure_vassal_title = {
-				limit = { tier = COUNT }
+				limit = {
+					OR = {
+						tier = COUNT
+						tier = BARON
+					}
+				}
 				usurp_title = ROOT
 			}
 		}

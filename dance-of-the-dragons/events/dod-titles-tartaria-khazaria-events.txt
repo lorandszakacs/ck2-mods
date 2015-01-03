@@ -24,7 +24,12 @@ character_event = {
 
 		k_khazaria = {
 			any_de_jure_vassal_title = {
-				limit = { tier = COUNT }
+				limit = {
+					OR = {
+						tier = COUNT
+						tier = BARON
+					}
+				}
 				usurp_title = ROOT
 			}
 		}
