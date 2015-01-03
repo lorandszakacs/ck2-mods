@@ -22,69 +22,12 @@ character_event = {
 	option = {
 		name = "OK"
 
-		######################################
-		####        Duchy of Island       ####
-		######################################
-
-		c_vestisland = { usurp_title = ROOT }
-
-		c_austisland = { usurp_title = ROOT }
-
-		######################################
-		####       Duchy of Orkney        ####
-		######################################
-
-		c_faereyar = { usurp_title = ROOT }
-
-		c_shetland = { usurp_title = ROOT }
-
-		c_orkney = { usurp_title = ROOT }
-
-		######################################
-		####      Duchy of Vestlandet     ####
-		######################################
-
-		c_agder = { usurp_title = ROOT }
-
-		c_rogaland = { usurp_title = ROOT }
-
-		c_telemark = { usurp_title = ROOT }
-
-		c_bergenshus = { usurp_title = ROOT }
-
-		######################################
-		####       Duchy of Ostlandet     ####
-		######################################
-
-		c_vestfold = { usurp_title = ROOT }
-
-		c_akershus = { usurp_title = ROOT }
-
-		c_oppland = { usurp_title = ROOT }
-
-		c_hedmark = { usurp_title = ROOT }
-
-		######################################
-		####       Duchy of Trondelag     ####
-		######################################
-		
-		c_trondelag = { usurp_title = ROOT }
-
-		c_naumadal = { usurp_title = ROOT }
-
-		c_halogaland = { usurp_title = ROOT }
-
-		c_finnmark = { usurp_title = ROOT }
-
-		c_nordland = { usurp_title = ROOT }
-
-		######################################
-		####       Duchy of Jamtland      ####
-		######################################
-
-		c_jamtland = { usurp_title = ROOT }
-
-		c_herjedalen = { usurp_title = ROOT }
+		k_norway = {
+			any_de_jure_vassal_title = {
+				limit = { tier = COUNT }
+				usurp_title = ROOT
+			}
+		}
 
 	}
 	

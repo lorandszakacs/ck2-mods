@@ -22,73 +22,12 @@ character_event = {
 	option = {
 		name = "OK"
 
-		######################################
-		####       Duchy of Norrland      ####
-		######################################
-
-		c_lappland = { usurp_title = ROOT }
-
-		c_vasterbotten = { usurp_title = ROOT }
-
-		c_angermanland = { usurp_title = ROOT }
-
-		c_medelpad = { usurp_title = ROOT }
-
-		c_halsingland = { usurp_title = ROOT }
-
-		######################################
-		####        Duchy of Uppand       ####
-		######################################
-
-		c_gastrikland = { usurp_title = ROOT }
-
-		c_uppland = { usurp_title = ROOT }
-
-		c_aland = { usurp_title = ROOT }
-
-		c_sodermanland = { usurp_title = ROOT }
-
-		######################################
-		####      Duchy of Bergslagen     ####
-		######################################
-
-		c_dalarna = { usurp_title = ROOT }
-
-		c_varmland = { usurp_title = ROOT }
-
-		c_vastmanland = { usurp_title = ROOT }
-
-		######################################
-		####     Duchy of Ostergotland    ####
-		######################################
-
-		c_ostergotland = { usurp_title = ROOT }
-
-		c_narke = { usurp_title = ROOT }
-
-		c_gotland = { usurp_title = ROOT }
-
-		c_tjust = { usurp_title = ROOT }
-
-		######################################
-		####     Duchy of Vastergotland   ####
-		######################################
-
-		c_dal = { usurp_title = ROOT }
-
-		c_viken = { usurp_title = ROOT }
-
-		c_vastergotland = { usurp_title = ROOT }
-
-		######################################
-		####       Duchy of Smaland       ####
-		######################################
-
-		c_smaland = { usurp_title = ROOT }
-
-		c_oland = { usurp_title = ROOT }
-
-		c_more = { usurp_title = ROOT }
+		k_sweden = {
+			any_de_jure_vassal_title = {
+				limit = { tier = COUNT }
+				usurp_title = ROOT
+			}
+		}
 	}
 	
 	option = {

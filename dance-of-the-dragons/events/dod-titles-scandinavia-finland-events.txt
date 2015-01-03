@@ -22,59 +22,12 @@ character_event = {
 	option = {
 		name = "OK"
 
-		######################################
-		####       Duchy of Finland       ####
-		######################################
-
-		c_nyland = { usurp_title = ROOT }
-
-		c_finland = { usurp_title = ROOT }
-
-		c_tavasts = { usurp_title = ROOT }
-
-		c_satakunta = { usurp_title = ROOT }
-
-		c_osterbotten = { usurp_title = ROOT }
-
-		c_savolaks = { usurp_title = ROOT }
-
-		c_kemi = { usurp_title = ROOT }
-
-		######################################
-		####        Duchy of Estonia       ####
-		######################################
-
-		c_reval = { usurp_title = ROOT }
-
-		c_narva = { usurp_title = ROOT }
-
-		c_vodi = { usurp_title = ROOT }
-
-		######################################
-		####       Duchy of Karelia       ####
-		######################################
-
-		c_kola = { usurp_title = ROOT }
-
-		c_karelen = { usurp_title = ROOT }
-
-		c_kexholm = { usurp_title = ROOT }
-
-		c_onega = { usurp_title = ROOT }
-
-		c_kandalax = { usurp_title = ROOT }
-
-		######################################
-		####       Duchy of Livonia       ####
-		######################################
-
-		c_lettigalians = { usurp_title = ROOT }
-
-		c_osel = { usurp_title = ROOT }
-
-		c_livs = { usurp_title = ROOT }
-
-		c_dorpat = { usurp_title = ROOT }
+		k_finland = {
+			any_de_jure_vassal_title = {
+				limit = { tier = COUNT }
+				usurp_title = ROOT
+			}
+		}
 	}
 	
 	option = {

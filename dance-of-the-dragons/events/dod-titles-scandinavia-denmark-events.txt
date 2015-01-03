@@ -22,47 +22,12 @@ character_event = {
 	option = {
 		name = "OK"
 
-		######################################
-		####       Duchy of Skane      ####
-		######################################
-
-		c_halland = { usurp_title = ROOT }
-
-		c_skane = { usurp_title = ROOT }
-
-		c_bornholm = { usurp_title = ROOT }
-
-		c_blekinge = { usurp_title = ROOT }
-
-		######################################
-		####        Duchy of Slesvig      ####
-		######################################
-
-		c_slesvig = { usurp_title = ROOT }
-
-		c_jylland = { usurp_title = ROOT }
-
-		######################################
-		####      Duchy of Sjaelland      ####
-		######################################
-
-		c_fyn = { usurp_title = ROOT }
-
-		c_sjaelland = { usurp_title = ROOT }
-
-
-		######################################
-		####       Duchy of Holstein      ####
-		######################################
-
-		c_hamburg = { usurp_title = ROOT }
-
-		c_lubeck = { usurp_title = ROOT }
-
-		c_holstein = { usurp_title = ROOT }
-
-		c_bremen = { usurp_title = ROOT }
-
+		k_denmark = {
+			any_de_jure_vassal_title = {
+				limit = { tier = COUNT }
+				usurp_title = ROOT
+			}
+		}
 	}
 	
 	option = {
