@@ -28,11 +28,16 @@ character_event = {
 					tier = KING
 					tier = DUKE
 					tier = COUNT
-					tier = BARON
 				}
-				NOT = {trait = dod_vassal}
+				NOT = {
+					trait = dod_vassal
+					clan = yes
+				}
 			}
 			any_demesne_title = {
+				limit = {
+
+				}
 				usurp_title = ROOT
 			}
 			death = {death_reason = death_natural}
@@ -76,6 +81,10 @@ character_event = {
 						tier = COUNT
 						tier = BARON
 					}
+					NOT = {
+						clan = yes
+					}
+
 				}
 				any_demesne_title = {
 					usurp_title = ROOT

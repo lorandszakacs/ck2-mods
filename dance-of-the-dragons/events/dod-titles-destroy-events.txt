@@ -25,10 +25,12 @@ character_event = {
 		any_demesne_title = {
 			limit = {
 				is_landless_type_title = no
+				clan = no
 
 				OR = {
 					tier = DUKE
 					tier = KING
+					tier = CLAN
 				}
 
 				ROOT = {

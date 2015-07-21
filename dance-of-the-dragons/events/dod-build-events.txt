@@ -106,6 +106,8 @@ character_event = {
 					#Shipyard
 					add_building = tb_shipyard_1
 					add_building = tb_shipyard_2
+					add_building = tb_shipyard_3
+					add_building = tb_shipyard_4
 
 				}
 
