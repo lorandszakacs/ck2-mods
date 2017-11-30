@@ -1,0 +1,67 @@
+namespace = dodPillage
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+
+# hire a female spouse
+
+character_event = {
+	id = dodPillage.0
+	desc = "Pillage everything"
+	picture = GFX_evt_emissary
+
+	is_triggered_only = yes
+	ai = no
+
+	option = {
+		name = "OK"
+        any_realm_province {
+            any_province_holding {
+              limit = {NOT = {holding_type = nomad} }
+
+              hidden_tooltip = {
+                destroy_settlement = THIS
+              }
+
+              if = {
+                limit = { NOT = { holding_type = tribal } }
+                ROOT = {
+                  population = 1000
+                  wealth = 750
+                }
+                custom_tooltip = {
+                  text = gain_tech_custom_tooltip
+                  hidden_tooltip = {
+                    FROM = {
+                      random_list = {
+                        10 = { military_techpoints = 75 }
+                        10 = { economy_techpoints = 75 }
+                        10 = { culture_techpoints = 75 }
+                      }
+                    }
+                  }
+                }
+              }
+
+              if = {
+                limit = { holding_type = tribal }
+                ROOT = {
+                  wealth = 50
+                  population = 1000
+                }
+              }
+
+            }
+        }
+	}
+
+	option = {
+		name = "Cancel"
+	}
+}
