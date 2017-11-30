@@ -15,10 +15,10 @@ character_event = {
 	id = dodCouncil.0
 	desc = "Hire an entire council."
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
 		create_character = {
@@ -40,6 +40,8 @@ character_event = {
 			trait = just
 			trait = gregarious
 			trait = vassal
+			trait = content
+			trait = celibate
 			attributes = {
 				diplomacy = 20
 				martial = 0
@@ -69,6 +71,8 @@ character_event = {
 			trait = gregarious
 			trait = vassal
 			trait = strong
+			trait = content
+			trait = celibate
 			attributes = {
 				diplomacy = 0
 				martial = 22
@@ -96,6 +100,8 @@ character_event = {
 			trait = just
 			trait = gregarious
 			trait = vassal
+			trait = content
+			trait = celibate
 			attributes = {
 				diplomacy = 0
 				martial = 0
@@ -123,6 +129,8 @@ character_event = {
 			trait = just
 			trait = gregarious
 			trait = vassal
+			trait = content
+			trait = celibate
 			attributes = {
 				diplomacy = 0
 				martial = 0
@@ -150,6 +158,8 @@ character_event = {
 			trait = just
 			trait = gregarious
 			trait = vassal
+			trait = content
+			trait = celibate
 			attributes = {
 				diplomacy = 5
 				martial = 0
@@ -159,7 +169,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
@@ -180,10 +190,10 @@ character_event = {
 	id = dodCouncil.1
 	desc = "Hire an entire for all your vassals."
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
 
@@ -227,6 +237,8 @@ character_event = {
 				trait = just
 				trait = gregarious
 				trait = vassal
+				trait = content
+				trait = celibate
 				attributes = {
 					diplomacy = 10
 					martial = 0
@@ -254,6 +266,8 @@ character_event = {
 				trait = just
 				trait = gregarious
 				trait = vassal
+				trait = content
+				trait = celibate
 				attributes = {
 					diplomacy = 0
 					martial = 10
@@ -281,6 +295,8 @@ character_event = {
 				trait = just
 				trait = gregarious
 				trait = vassal
+				trait = content
+				trait = celibate
 				attributes = {
 					diplomacy = 0
 					martial = 0
@@ -308,6 +324,8 @@ character_event = {
 				trait = just
 				trait = gregarious
 				trait = vassal
+				trait = content
+				trait = celibate
 				attributes = {
 					diplomacy = 0
 					martial = 0
@@ -335,6 +353,8 @@ character_event = {
 				trait = just
 				trait = gregarious
 				trait = vassal
+				trait = content
+				trait = celibate
 				attributes = {
 					diplomacy = 5
 					martial = 0
@@ -345,7 +365,7 @@ character_event = {
 			}
 		} # any realm lord
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}

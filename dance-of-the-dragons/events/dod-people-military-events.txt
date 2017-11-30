@@ -13,10 +13,10 @@ character_event = {
 	id = dodMillitary.1
 	desc = "Hire a brilliant general"
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
 		create_character = {
@@ -33,6 +33,8 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = celibate
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -42,7 +44,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
@@ -61,10 +63,10 @@ character_event = {
 	id = dodMillitary.2
 	desc = "Hire two brilliant generals"
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
 		create_character = {
@@ -81,6 +83,8 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = celibate
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -104,6 +108,8 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = celibate
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -113,7 +119,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
@@ -132,10 +138,10 @@ character_event = {
 	id = dodMillitary.3
 	desc = "Hire three brilliant generals"
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
 		create_character = {
@@ -152,6 +158,8 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = celibate
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -175,6 +183,7 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -198,6 +207,7 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -207,7 +217,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
@@ -226,10 +236,10 @@ character_event = {
 	id = dodMillitary.4
 	desc = "Hire four brilliant generals"
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
 		create_character = {
@@ -246,6 +256,8 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = celibate
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -269,6 +281,7 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -292,6 +305,7 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -315,6 +329,7 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -324,7 +339,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
@@ -343,10 +358,10 @@ character_event = {
 	id = dodMillitary.5
 	desc = "Hire five brilliant generals"
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
 		create_character = {
@@ -363,6 +378,8 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = celibate
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -386,6 +403,7 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -409,6 +427,7 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -432,6 +451,7 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -455,6 +475,7 @@ character_event = {
 			trait = dod_commander
 			trait = patient
 			trait = strong
+			trait = content
 			attributes = {
 				diplomacy = 8
 				martial = 10
@@ -464,7 +485,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}

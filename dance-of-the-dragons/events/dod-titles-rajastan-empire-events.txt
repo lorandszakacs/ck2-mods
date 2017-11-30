@@ -1,4 +1,4 @@
-namespace = dodBritannia
+namespace = dodRajastan
 
 #####################################################################################################
 #####################################################################################################
@@ -9,11 +9,11 @@ namespace = dodBritannia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the kingdom of Britannia.
+#Get all procinces in the empire of Rajastan.
 
 character_event = {
-	id = dodBritannia.0
-	desc = "Usurp the titles in the empire of Britannia."
+	id = dodRajastan.0
+	desc = "Usurp the titles in the empire of Rajastan."
 	picture = GFX_evt_emissary
 
 	ai = no
@@ -22,7 +22,7 @@ character_event = {
 	option = {
 		name = "OK"
 
-		e_britannia = {
+		e_rajastan = {
 			any_de_jure_vassal_title = {
 				limit = {
 					OR = {

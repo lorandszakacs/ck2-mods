@@ -13,13 +13,13 @@ character_event = {
 	id = dodBuild.0
 	desc = "Build cities everywhere!"
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
-		
+
 		any_realm_province = {
 			limit = {
 				has_empty_holding = yes
@@ -52,10 +52,10 @@ character_event = {
 	id = dodBuild.1
 	desc = "Build buildings everywhere!"
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
 		hidden_tooltip = {
@@ -66,26 +66,26 @@ character_event = {
 				######################################
 				if = {
 					limit = { holding_type = tribal }
-					
+
 					#Castle Wall:
 					add_building = tb_hillfort_1
 					add_building = tb_hillfort_2
 					add_building = tb_hillfort_3
 					add_building = tb_hillfort_4
-					
+
 					#Market:
 					add_building = tb_market_town_1
 					add_building = tb_market_town_2
 					add_building = tb_market_town_3
 					add_building = tb_market_town_4
-					
+
 					#War_Camp:
 					add_building = tb_war_camp_1
 					add_building = tb_war_camp_2
 					add_building = tb_war_camp_3
 					add_building = tb_war_camp_4
 
-					#Training Groungs:
+					#Training Grounds:
 					add_building = tb_training_grounds_1
 					add_building = tb_training_grounds_2
 					add_building = tb_training_grounds_3
@@ -116,85 +116,85 @@ character_event = {
 				######################################
 				if = {
 					limit = { holding_type = castle }
-					
+
 					#Castle Wall:
 					add_building = ca_wall_1
 					add_building = ca_wall_2
-					
+
 					#Fortifications:
 					add_building = ca_wall_q_1
 					add_building = ca_wall_q_2
-					
+
 					#Castle Town:
 					add_building = ca_town_1
 					add_building = ca_town_2
-					
+
 					#Castle Shipyard, we can add it, it will be removed if not supported anyway.
 					add_building = ca_shipyard_1
 					add_building = ca_shipyard_2
 				}
-				
+
 				######################################
 				#####       build in city         ####
 				######################################
 				if = {
 					limit = { holding_type = city }
-					
+
 					#City Walls:
 					add_building = ct_wall_1
 					add_building = ct_wall_2
-					
+
 					#City Fortifications:
 					add_building = ct_wall_q_1
 					add_building = ct_wall_q_2
-					
+
 					#Town Market
 					add_building = ct_marketplace_1
 					add_building = ct_marketplace_2
-					
+
 					#Port
 					add_building = ct_port_1
 					add_building = ct_port_2
-					
+
 					#University
 					add_building = ct_university_1
-					
+
 					#Shipyard
 					add_building = ct_shipyard_1
 				}
-				
+
 				######################################
 				#####      build in temple        ####
 				######################################
 				if = {
 					limit = { holding_type = temple }
-					
+
 					#Temple Walls:
 					add_building = tp_wall_1
 					add_building = tp_wall_2
-					
+
 					#Temple Fortifications:
 					add_building = tp_wall_q_1
 					add_building = tp_wall_q_2
-					
+
 					#Temple Town
 					add_building = tp_town_1
 					add_building = tp_town_2
-					
+
 					#Monastery
 					add_building = tp_monastery_1
-					
+
 					#Monastic School
 					add_building = tp_school_1
-					
-					
+
+
 					#Shipyard
 					add_building = tp_shipyard_1
 				}
 			}
-			
+
 			any_realm_lord = {
-			
+
 				any_demesne_title = {
 
 					######################################
@@ -202,19 +202,19 @@ character_event = {
 					######################################
 					if = {
 						limit = { holding_type = tribal }
-						
+
 						#Castle Wall:
 						add_building = tb_hillfort_1
 						add_building = tb_hillfort_2
 						add_building = tb_hillfort_3
 						add_building = tb_hillfort_4
-						
+
 						#Market:
 						add_building = tb_market_town_1
 						add_building = tb_market_town_2
 						add_building = tb_market_town_3
 						add_building = tb_market_town_4
-						
+
 						#Shipyard
 						add_building = tb_shipyard_1
 					}
@@ -224,73 +224,73 @@ character_event = {
 					######################################
 					if = {
 						limit = { holding_type = castle }
-						
+
 						#Castle Wall:
 						add_building = ca_wall_1
 						add_building = ca_wall_2
-						
+
 						#Fortifications:
 						add_building = ca_wall_q_1
 						add_building = ca_wall_q_2
-						
+
 						#Castle Town:
 						add_building = ca_town_1
 						add_building = ca_town_2
-						
+
 						#Castle Shipyard, we can add it, it will be removed if not supported anyway.
 						add_building = ca_shipyard_1
 						add_building = ca_shipyard_2
 					}
-					
+
 					######################################
 					#####       build in city         ####
 					######################################
 					if = {
 						limit = { holding_type = city }
-						
+
 						#City Walls:
 						add_building = ct_wall_1
 						add_building = ct_wall_2
-						
+
 						#City Fortifications:
 						add_building = ct_wall_q_1
 						add_building = ct_wall_q_2
-						
+
 						#Town Market
 						add_building = ct_marketplace_1
 						add_building = ct_marketplace_2
-						
+
 						#University
 						add_building = ct_university_1
-						
+
 						#Shipyard
 						add_building = ct_shipyard_1
 					}
-					
+
 					######################################
 					#####      build in temple        ####
 					######################################
 					if = {
 						limit = { holding_type = temple }
-						
+
 						#Temple Walls:
 						add_building = tp_wall_1
 						add_building = tp_wall_2
-						
+
 						#Temple Fortifications:
 						add_building = tp_wall_q_1
 						add_building = tp_wall_q_2
-						
+
 						#Temple Town
 						add_building = tp_town_1
 						add_building = tp_town_2
-						
+
 						#Monastery
 						add_building = tp_monastery_1
-						
+
 						#Monastic School
 						add_building = tp_school_1
-						
+
 						#Shipyard
 						add_building = tp_shipyard_1
 					}

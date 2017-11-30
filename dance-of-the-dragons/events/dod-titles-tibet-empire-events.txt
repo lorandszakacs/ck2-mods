@@ -1,4 +1,4 @@
-namespace = dodBritannia
+namespace = dodTibet
 
 #####################################################################################################
 #####################################################################################################
@@ -9,11 +9,11 @@ namespace = dodBritannia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the kingdom of Britannia.
+#Get all procinces in the empire of Tibet.
 
 character_event = {
-	id = dodBritannia.0
-	desc = "Usurp the titles in the empire of Britannia."
+	id = dodTibet.0
+	desc = "Usurp the titles in the empire of Tibet."
 	picture = GFX_evt_emissary
 
 	ai = no
@@ -22,7 +22,7 @@ character_event = {
 	option = {
 		name = "OK"
 
-		e_britannia = {
+		e_tibet = {
 			any_de_jure_vassal_title = {
 				limit = {
 					OR = {

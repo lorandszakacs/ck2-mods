@@ -17,9 +17,9 @@ character_event = {
 	id = dodVassal.0
 	desc = "Converts all the vassals in your realm to something better. Does not kill anyone."
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 		hidden_tooltip = {
@@ -31,6 +31,7 @@ character_event = {
 				add_trait = just
 				add_trait = content
 				add_trait = kind
+				add_trait = celibate
 				remove_trait = paranoid
 				remove_trait = cruel
 				remove_trait = lisp
@@ -59,7 +60,7 @@ character_event = {
 				remove_trait = lustful
 				remove_trait = leper
 			}
-			
+
 			any_realm_character = {
 				limit = {is_ruler = no}
 				religion = ROOT
