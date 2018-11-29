@@ -13,6 +13,8 @@ dod_player = {
 
 	spouse_opinion = 1000
 
+	combat_rating = 80
+
 	command_modifier = {
 		morale_defence = 0.25
 		defence = 0.25
@@ -32,7 +34,7 @@ dod_player = {
 		speed = 1.0
 		retreat = 1.0
 
-		combat_rating = 20
+		combat_rating = 80
 	}
 }
 
