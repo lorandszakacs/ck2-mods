@@ -2,7 +2,7 @@
 dod_player = {
 	cached = yes
 
-	demesne_size = 50
+	demesne_size = 90
 
 	birth = 0
 	inherit_chance = 0

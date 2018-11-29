@@ -9,16 +9,16 @@ namespace = dodUsurp
 #####################################################################################################
 #####################################################################################################
 
-#Usurp all the titles in your realm
+#Usurp all the titles in your realm except for vassals with dod_vassal trait
 
 character_event = {
 	id = dodUsurp.0
 	desc = "Usurp the titles in the realm from vassals that do not have the dod_vassal trait"
 	picture = GFX_evt_emissary
-	
+
 	ai = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 
@@ -43,7 +43,7 @@ character_event = {
 			death = {death_reason = death_natural}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
@@ -64,10 +64,10 @@ character_event = {
 	id = dodUsurp.1
 	desc = "FORCE usurp ALL the titles of your direct vassals. Will remove them even if they have the Vassal trait."
 	picture = GFX_evt_emissary
-	
+
 	ai = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 		hidden_tooltip = {
@@ -93,7 +93,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
@@ -112,13 +112,13 @@ character_event = {
 	id = dodUsurp.2
 	desc = "Usurp all counties in the duchy where your capital is."
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
-		
+
 		capital_scope = {
 			duchy = {
 				any_de_jure_vassal_title = {

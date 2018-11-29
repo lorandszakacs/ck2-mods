@@ -9,16 +9,16 @@ namespace = dodScandinavia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the kingdom of Scandinavia.
+#Get all procinces in the empire of Scandinavia.
 
 character_event = {
 	id = dodScandinavia.0
-	desc = "Usurp the titles in the kingdom of Scandinavia."
+	desc = "Usurp the titles in the emprie of Scandinavia."
 	picture = GFX_evt_emissary
-	
+
 	ai = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 
@@ -35,7 +35,7 @@ character_event = {
 		}
 
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
