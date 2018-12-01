@@ -13,7 +13,7 @@ namespace = dodPersia
 
 character_event = {
 	id = dodPersia.0
-	desc = "Usurp the titles in the empire of Peria."
+	desc = "Usurp the titles in the empire of Persia."
 	picture = GFX_evt_emissary
 
 	ai = no
