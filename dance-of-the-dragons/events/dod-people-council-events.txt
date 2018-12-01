@@ -43,7 +43,7 @@ character_event = {
 			trait = content
 			trait = celibate
 			attributes = {
-				diplomacy = 20
+				diplomacy = 60
 				martial = 0
 				stewardship = 0
 				intrigue = 0
@@ -75,7 +75,7 @@ character_event = {
 			trait = celibate
 			attributes = {
 				diplomacy = 0
-				martial = 22
+				martial = 60
 				stewardship = 0
 				intrigue = 0
 				learning = 0
@@ -105,7 +105,7 @@ character_event = {
 			attributes = {
 				diplomacy = 0
 				martial = 0
-				stewardship = 20
+				stewardship = 60
 				intrigue = 0
 				learning = 0
 			}
@@ -135,7 +135,7 @@ character_event = {
 				diplomacy = 0
 				martial = 0
 				stewardship = 0
-				intrigue = 25
+				intrigue = 60
 				learning = 0
 			}
 		}
@@ -160,12 +160,13 @@ character_event = {
 			trait = vassal
 			trait = content
 			trait = celibate
+			trait = physician
 			attributes = {
-				diplomacy = 5
+				diplomacy = 0
 				martial = 0
 				stewardship = 0
 				intrigue = 0
-				learning = 20
+				learning = 60
 			}
 		}
 	}
