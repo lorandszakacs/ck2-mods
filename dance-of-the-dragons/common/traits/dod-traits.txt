@@ -31,8 +31,8 @@ dod_player = {
 		flank = 0.25
 		siege = 2.5
 
-		speed = 1.0
-		retreat = 1.0
+		speed = 4.0
+		retreat = 4.0
 
 		combat_rating = 80
 	}
@@ -47,6 +47,15 @@ dod_vassal = {
 	inherit_chance = 0
 	random = 0
 	customizer = 0
+
+	opposites =  {
+		hedonist
+		seducer
+		seductress
+	}
+
+	#we don't want our vassals to have any pesky kids
+	fertility = -10.0
 
 	immortal = yes
 
@@ -82,6 +91,9 @@ dod_commander = {
 
 	martial = 6
 
+	#we don't want our commanders to have any pesky kids
+	fertility = -10.0
+
 	command_modifier = {
 		morale_defence = 0.25
 		defence = 0.25
@@ -105,7 +117,31 @@ dod_commander = {
 
 ########################################################
 
+dod_councillor = {
+	birth = 0
+	inherit_chance = 0
+	random = 0
+	customizer = 0
 
+	opposites =  {
+		hedonist
+		seducer
+		seductress
+	}
+
+	#we don't want our councillors to have any pesky kids
+	fertility = -10.0
+
+	immortal = yes
+
+	liege_opinion = 1000
+	vassal_opinion = 1000
+	spouse_opinion = 30
+
+	ai_ambition = -1000
+	ai_rationality = 1000
+
+}
 
 ########################################################
 

@@ -31,7 +31,6 @@ character_event = {
 				add_trait = just
 				add_trait = content
 				add_trait = kind
-				add_trait = celibate
 				remove_trait = paranoid
 				remove_trait = cruel
 				remove_trait = lisp

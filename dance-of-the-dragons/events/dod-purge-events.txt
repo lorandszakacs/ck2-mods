@@ -15,10 +15,10 @@ character_event = {
 	id = dodPurge.0
 	desc = "Kill all courtiers except members of your dynasty, the councilors, spouses of your dynasty and commanders."
 	picture = GFX_evt_emissary
-	
+
 	ai = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 
@@ -27,12 +27,13 @@ character_event = {
 				NOT = {dynasty = ROOT}
 				NOT = {is_councillor = yes}
 				NOT = {trait = dod_commander}
+				NOT = {trait = dod_councillor }
 				NOT = { spouse = { dynasty = ROOT } }
 			}
 			death = {death_reason = death_natural}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
@@ -53,10 +54,10 @@ character_event = {
 	id = dodPurge.1
 	desc = "Kill all courtiers except members of your dynasty, and spouses of your dynasty."
 	picture = GFX_evt_emissary
-	
+
 	ai = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 
@@ -68,7 +69,7 @@ character_event = {
 			death = {death_reason = death_natural}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}
@@ -89,10 +90,10 @@ character_event = {
 	id = dodPurge.9
 	desc = "Kill all courtiers except the members of your dynasty."
 	picture = GFX_evt_emissary
-	
+
 	ai = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 
@@ -103,7 +104,29 @@ character_event = {
 			death = {death_reason = death_natural}
 		}
 	}
-	
+
+	option = {
+		name = "Cancel"
+	}
+}
+
+#Hard purge, everyone except yourself
+character_event = {
+	id = dodPurge.10
+	desc = "Kill all courtiers. YES. Even family members"
+	picture = GFX_evt_emissary
+
+	ai = no
+	is_triggered_only = yes
+
+	option = {
+		name = "OK"
+
+		any_courtier = {
+			death = {death_reason = death_natural}
+		}
+	}
+
 	option = {
 		name = "Cancel"
 	}
