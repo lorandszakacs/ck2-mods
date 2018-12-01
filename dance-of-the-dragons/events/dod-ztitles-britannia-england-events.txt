@@ -9,16 +9,14 @@ namespace = dodEngland
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the kingdom of England.
-
 character_event = {
 	id = dodEngland.0
 	desc = "Usurp the titles in the kingdom of England."
 	picture = GFX_evt_emissary
-	
+
 	ai = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 
@@ -35,7 +33,7 @@ character_event = {
 		}
 
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}

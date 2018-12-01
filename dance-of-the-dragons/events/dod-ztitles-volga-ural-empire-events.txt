@@ -9,8 +9,6 @@ namespace = dodUral
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Volga Ural.
-
 character_event = {
 	id = dodUral.0
 	desc = "Usurp the titles in the empire of Volga Ural."

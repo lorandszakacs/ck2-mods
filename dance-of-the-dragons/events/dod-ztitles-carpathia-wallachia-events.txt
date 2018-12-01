@@ -9,16 +9,14 @@ namespace = dodWallachia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the kingdom of Wallachia.
-
 character_event = {
 	id = dodWallachia.0
 	desc = "Usurp the titles in the kingdom of Wallachia."
 	picture = GFX_evt_emissary
-	
+
 	ai = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 
@@ -34,7 +32,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}

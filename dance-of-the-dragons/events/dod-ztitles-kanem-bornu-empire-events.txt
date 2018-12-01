@@ -9,8 +9,6 @@ namespace = dodKanem
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Italia.
-
 character_event = {
 	id = dodKanem.0
 	desc = "Usurp the titles in the empire of Kanem-Bornu."

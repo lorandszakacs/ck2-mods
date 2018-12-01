@@ -9,8 +9,6 @@ namespace = dodArmenia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Scandinavia.
-
 character_event = {
 	id = dodArmenia.0
 	desc = "Usurp the titles in the kingdom of Armenia."

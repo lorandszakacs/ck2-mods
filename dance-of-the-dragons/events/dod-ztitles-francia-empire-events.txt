@@ -9,8 +9,6 @@ namespace = dodFrancia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Francia.
-
 character_event = {
 	id = dodFrancia.0
 	desc = "Usurp the titles in the empire of Francia."

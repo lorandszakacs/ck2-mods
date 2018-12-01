@@ -9,16 +9,14 @@ namespace = dodWendishEmpire
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the kingdom of Wendish
-
 character_event = {
 	id = dodWendishEmpire.0
 	desc = "Usurp the titles in the kingdom of Wendish Empire."
 	picture = GFX_evt_emissary
-	
+
 	ai = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 
@@ -34,7 +32,7 @@ character_event = {
 			}h
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}

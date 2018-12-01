@@ -9,8 +9,6 @@ namespace = dodSicily
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Scandinavia.
-
 character_event = {
 	id = dodSicily.0
 	desc = "Usurp the titles in the kingdom of Sicily."

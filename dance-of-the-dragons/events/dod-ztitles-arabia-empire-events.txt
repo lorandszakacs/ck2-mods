@@ -9,8 +9,6 @@ namespace = dodArabia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Italia.
-
 character_event = {
 	id = dodArabia.0
 	desc = "Usurp the titles in the empire of Arabia."

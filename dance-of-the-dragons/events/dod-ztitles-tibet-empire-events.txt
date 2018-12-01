@@ -9,8 +9,6 @@ namespace = dodTibet
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Tibet.
-
 character_event = {
 	id = dodTibet.0
 	desc = "Usurp the titles in the empire of Tibet."

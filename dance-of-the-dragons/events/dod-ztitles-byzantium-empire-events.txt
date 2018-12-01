@@ -9,8 +9,6 @@ namespace = dodByzantium
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Byzantium.
-
 character_event = {
 	id = dodByzantium.0
 	desc = "Usurp the titles in the empire of Byzantium."

@@ -9,8 +9,6 @@ namespace = dodRajastan
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Rajastan.
-
 character_event = {
 	id = dodRajastan.0
 	desc = "Usurp the titles in the empire of Rajastan."

@@ -9,8 +9,6 @@ namespace = dodTartaria
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the kingdom of Tartaria.
-
 character_event = {
 	id = dodTartaria.0
 	desc = "Usurp the titles in the empire of Tartaria."

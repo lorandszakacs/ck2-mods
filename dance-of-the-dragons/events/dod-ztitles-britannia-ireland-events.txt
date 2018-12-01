@@ -9,16 +9,14 @@ namespace = dodIreland
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the kingdom of Ireland.
-
 character_event = {
 	id = dodIreland.0
 	desc = "Usurp the titles in the kingdom of Ireland."
 	picture = GFX_evt_emissary
-	
+
 	ai = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 
@@ -35,7 +33,7 @@ character_event = {
 		}
 
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}

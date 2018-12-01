@@ -9,8 +9,6 @@ namespace = dodAbyssinia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Italia.
-
 character_event = {
 	id = dodAbyssinia.0
 	desc = "Usurp the titles in the empire of Abyssinia."

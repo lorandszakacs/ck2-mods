@@ -9,8 +9,6 @@ namespace = dodBulgaria
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Scandinavia.
-
 character_event = {
 	id = dodBulgaria.0
 	desc = "Usurp the titles in the kingdom of Bulgaria."

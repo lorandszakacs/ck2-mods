@@ -9,11 +9,9 @@ namespace = dodCroatia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Scandinavia.
-
 character_event = {
 	id = dodCroatia.0
-	desc = "Usurp the titles in the kingdom of Armenia."
+	desc = "Usurp the titles in the kingdom of Croatia."
 	picture = GFX_evt_emissary
 
 	ai = no

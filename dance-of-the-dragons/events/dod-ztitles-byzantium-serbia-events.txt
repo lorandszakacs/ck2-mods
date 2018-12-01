@@ -9,8 +9,6 @@ namespace = dodSerbia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Scandinavia.
-
 character_event = {
 	id = dodSerbia.0
 	desc = "Usurp the titles in the kingdom of Serbia."

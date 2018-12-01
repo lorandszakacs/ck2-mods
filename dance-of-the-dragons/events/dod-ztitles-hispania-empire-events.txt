@@ -9,8 +9,6 @@ namespace = dodHispania
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Hispania.
-
 character_event = {
 	id = dodHispania.0
 	desc = "Usurp the titles in the empire of Hispania."

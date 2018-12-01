@@ -9,8 +9,6 @@ namespace = dodTrebizond
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Scandinavia.
-
 character_event = {
 	id = dodTrebizond.0
 	desc = "Usurp the titles in the kingdom of Trebizond."

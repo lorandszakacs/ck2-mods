@@ -9,16 +9,14 @@ namespace = dodRus
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the kingdom of Rus.
-
 character_event = {
 	id = dodRus.0
 	desc = "Usurp the titles in the kingdom of Rus."
 	picture = GFX_evt_emissary
-	
+
 	ai = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "OK"
 
@@ -34,7 +32,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Cancel"
 	}

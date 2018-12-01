@@ -9,8 +9,6 @@ namespace = dodItalia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Italia.
-
 character_event = {
 	id = dodItalia.0
 	desc = "Usurp the titles in the empire of Italia."
@@ -22,7 +20,7 @@ character_event = {
 	option = {
 		name = "OK"
 
-		e_italia = {
+		e_italy = {
 			any_de_jure_vassal_title = {
 				limit = {
 					OR = {

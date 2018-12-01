@@ -9,8 +9,6 @@ namespace = dodDeccan
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Bengal.
-
 character_event = {
 	id = dodDeccan.0
 	desc = "Usurp the titles in the empire of Deccan."

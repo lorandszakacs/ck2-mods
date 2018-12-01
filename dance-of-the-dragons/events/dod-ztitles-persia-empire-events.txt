@@ -9,8 +9,6 @@ namespace = dodPersia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Persia.
-
 character_event = {
 	id = dodPersia.0
 	desc = "Usurp the titles in the empire of Persia."

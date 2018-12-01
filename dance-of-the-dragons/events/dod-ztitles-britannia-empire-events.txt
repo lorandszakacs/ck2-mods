@@ -9,8 +9,6 @@ namespace = dodBritannia
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the kingdom of Britannia.
-
 character_event = {
 	id = dodBritannia.0
 	desc = "Usurp the titles in the empire of Britannia."

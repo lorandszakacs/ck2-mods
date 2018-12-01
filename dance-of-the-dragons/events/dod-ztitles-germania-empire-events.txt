@@ -9,8 +9,6 @@ namespace = dodGermania
 #####################################################################################################
 #####################################################################################################
 
-#Get all procinces in the empire of Germania.
-
 character_event = {
 	id = dodGermania.0
 	desc = "Usurp the titles in the empire of Germania."
