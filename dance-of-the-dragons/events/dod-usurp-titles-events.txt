@@ -13,7 +13,7 @@ namespace = dodUsurp
 
 character_event = {
 	id = dodUsurp.0
-	desc = "Usurp the titles in the realm from vassals that do not have the dod_vassal trait"
+	desc = "Usurp COUNT, DUKE, KINGS, BARON that do not have dod_vassal trait -- will have to be run multiple times if you have vassals higher than COUNT"
 	picture = GFX_evt_emissary
 
 	ai = no
@@ -28,6 +28,7 @@ character_event = {
 					tier = KING
 					tier = DUKE
 					tier = COUNT
+					tier = BARON
 				}
 				NOT = {
 					OR = {
@@ -98,7 +99,7 @@ character_event = {
 
 character_event = {
 	id = dodUsurp.1
-	desc = "FORCE usurp ALL the titles of your direct vassals. Will remove them even if they have the Vassal trait."
+	desc = "Usurp ALL -- COUNT, DUKE, KINGS, BARON -- will have to be run multiple times if you have vassals higher than COUNT."
 	picture = GFX_evt_emissary
 
 	ai = no
