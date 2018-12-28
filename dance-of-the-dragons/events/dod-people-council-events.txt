@@ -42,7 +42,7 @@ character_event = {
 			trait = content
 			trait = dod_councillor
 			attributes = {
-				diplomacy = 60
+				diplomacy = 15
 				martial = 0
 				stewardship = 0
 				intrigue = 0
@@ -73,7 +73,7 @@ character_event = {
 			trait = dod_councillor
 			attributes = {
 				diplomacy = 0
-				martial = 60
+				martial = 15
 				stewardship = 0
 				intrigue = 0
 				learning = 0
@@ -102,7 +102,7 @@ character_event = {
 			attributes = {
 				diplomacy = 0
 				martial = 0
-				stewardship = 60
+				stewardship = 15
 				intrigue = 0
 				learning = 0
 			}
@@ -131,7 +131,7 @@ character_event = {
 				diplomacy = 0
 				martial = 0
 				stewardship = 0
-				intrigue = 60
+				intrigue = 15
 				learning = 0
 			}
 		}
@@ -161,7 +161,7 @@ character_event = {
 				martial = 0
 				stewardship = 0
 				intrigue = 0
-				learning = 60
+				learning = 15
 			}
 		}
 	}
