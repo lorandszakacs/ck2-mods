@@ -50,7 +50,7 @@ character_event = {
 
 character_event = {
 	id = dodBuild.1
-	desc = "Build buildings everywhere!"
+	desc = "Build BASIC buildings everywhere!"
 	picture = GFX_evt_emissary
 
 	is_triggered_only = yes
@@ -317,7 +317,7 @@ character_event = {
 
 character_event = {
 	id = dodBuild.2
-	desc = "Build ALL buildings everywhere!"
+	desc = "Build ALL buildings in your own demesne!"
 	picture = GFX_evt_emissary
 
 	is_triggered_only = yes
