@@ -30,17 +30,53 @@ character_event = {
 					tier = COUNT
 				}
 				NOT = {
-					trait = dod_vassal
-					clan = yes
+					OR = {
+						trait = dod_vassal
+						clan = yes
+					}
 				}
 			}
 			any_demesne_title = {
+				#we never want to usurp titles that control religions.
+				# Do a text search in the game files for 'controls_religion ='
+				# to find all titles
 				limit = {
-
+					NOT = {
+						OR = {
+							title = k_papal_state
+							title = k_hellenic_pagan
+							title = k_orthodox
+							title = d_sunni
+							title = d_shiite
+							title = d_miaphysite
+							title = d_monophysite
+							title = d_nestorian
+							title = d_paulician
+							title = d_monothelite
+							title = d_fraticelli
+							title = d_iconoclast
+							title = d_yazidi
+							title = d_ibadi
+							title = d_kharijite
+							title = d_hurufi
+							title = d_norse_pagan_reformed
+							title = d_tengri_pagan_reformed
+							title = d_baltic_pagan_reformed
+							title = d_finnish_pagan_reformed
+							title = d_slavic_pagan_reformed
+							title = d_aztec_reformed
+							title = d_west_african_pagan_reformed
+							title = d_zun_pagan_reformed
+							title = d_zoroastrian
+							title = d_jewish
+							title = d_bon_reformed
+							title = d_manichean
+						}
+					}
 				}
 				usurp_title = ROOT
 			}
-			death = {death_reason = death_natural}
+			death = { death_reason = death_natural }
 		}
 	}
 
@@ -87,9 +123,46 @@ character_event = {
 
 				}
 				any_demesne_title = {
+					#we never want to usurp titles that control religions.
+					# Do a text search in the game files for 'controls_religion ='
+					# to find all titles
+					limit = {
+						NOT = {
+							OR = {
+								title = k_papal_state
+								title = k_hellenic_pagan
+								title = k_orthodox
+								title = d_sunni
+								title = d_shiite
+								title = d_miaphysite
+								title = d_monophysite
+								title = d_nestorian
+								title = d_paulician
+								title = d_monothelite
+								title = d_fraticelli
+								title = d_iconoclast
+								title = d_yazidi
+								title = d_ibadi
+								title = d_kharijite
+								title = d_hurufi
+								title = d_norse_pagan_reformed
+								title = d_tengri_pagan_reformed
+								title = d_baltic_pagan_reformed
+								title = d_finnish_pagan_reformed
+								title = d_slavic_pagan_reformed
+								title = d_aztec_reformed
+								title = d_west_african_pagan_reformed
+								title = d_zun_pagan_reformed
+								title = d_zoroastrian
+								title = d_jewish
+								title = d_bon_reformed
+								title = d_manichean
+							}
+						}
+					}
 					usurp_title = ROOT
 				}
-				death = {death_reason = death_natural}
+				death = { death_reason = death_natural }
 			}
 		}
 	}
@@ -122,6 +195,43 @@ character_event = {
 		capital_scope = {
 			duchy = {
 				any_de_jure_vassal_title = {
+					#we never want to usurp titles that control religions.
+					# Do a text search in the game files for 'controls_religion ='
+					# to find all titles
+					limit = {
+						NOT = {
+							OR = {
+								title = k_papal_state
+								title = k_hellenic_pagan
+								title = k_orthodox
+								title = d_sunni
+								title = d_shiite
+								title = d_miaphysite
+								title = d_monophysite
+								title = d_nestorian
+								title = d_paulician
+								title = d_monothelite
+								title = d_fraticelli
+								title = d_iconoclast
+								title = d_yazidi
+								title = d_ibadi
+								title = d_kharijite
+								title = d_hurufi
+								title = d_norse_pagan_reformed
+								title = d_tengri_pagan_reformed
+								title = d_baltic_pagan_reformed
+								title = d_finnish_pagan_reformed
+								title = d_slavic_pagan_reformed
+								title = d_aztec_reformed
+								title = d_west_african_pagan_reformed
+								title = d_zun_pagan_reformed
+								title = d_zoroastrian
+								title = d_jewish
+								title = d_bon_reformed
+								title = d_manichean
+							}
+						}
+					}
 					usurp_title = ROOT
 				}
 			}
