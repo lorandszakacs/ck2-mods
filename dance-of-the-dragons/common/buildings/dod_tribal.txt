@@ -11,16 +11,16 @@
 #	extra_tech_building_start = when starting a new game this building will be pre-built if the province has higher tech than the requirement + this + random 0-1
 #}
 
-# Castle
-castle = {
+# Tribal
+tribal = {
 
     #DoD Bloocline
-	ca_dod_retinues = { #Dragon Roost
+	tb_dod_retinues = { #Dragon Mound
 		desc = "Adds massive amounts of retinues"
 
 		potential = {
 			OR = {
-				FROMFROM = { has_building = ca_dod_retinues } #Show the building only if it has been already built or if the owner has the proper bloodline to build it.
+				FROMFROM = { has_building = tb_dod_retinues } #Show the building only if it has been already built or if the owner has the proper bloodline to build it.
 				FROM = {
 					any_owned_bloodline = {
 						has_bloodline_flag = dance_of_dragons_bloodline_flag
@@ -60,7 +60,7 @@ castle = {
             }
 		}
 
-		gold_cost = 200
+		gold_cost = 50
 		build_time = 200
 
         fort_level = 25
@@ -69,6 +69,8 @@ castle = {
 
 		add_number_to_name = no
 		ai_creation_factor = 0
+
+        convert_to_castle = ca_dod_retinues
 
 		extra_tech_building_start = 8.0
 	}

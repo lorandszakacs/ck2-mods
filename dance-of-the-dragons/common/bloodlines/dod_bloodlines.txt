@@ -4,5 +4,5 @@ dance_of_dragons_bloodline = {
     inheritance = all_descendants
 	allow_bastards = yes
 	picture = GFX_bloodlines_symbol_generic_hero
-	flags = { created_bloodline }
+	flags = { created_bloodline dance_of_dragons_bloodline_flag }
 }
