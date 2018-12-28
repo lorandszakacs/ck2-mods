@@ -9,16 +9,16 @@ namespace = dodBuild
 #####################################################################################################
 #####################################################################################################
 
-#Builds basic buildings in all your holdings.
+#Remove all buildings from your holdings.
 
 character_event = {
 	id = dodUnbuild.0
 	desc = "Build buildings everywhere!"
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
 		hidden_tooltip = {
@@ -29,19 +29,19 @@ character_event = {
 				######################################
 				if = {
 					limit = { holding_type = tribal }
-					
+
 					#Castle Wall:
 					remove_building = tb_hillfort_1
 					remove_building = tb_hillfort_2
 					remove_building = tb_hillfort_3
 					remove_building = tb_hillfort_4
-					
+
 					#Market:
 					remove_building = tb_market_town_1
 					remove_building = tb_market_town_2
 					remove_building = tb_market_town_3
 					remove_building = tb_market_town_4
-					
+
 					#War_Camp:
 					remove_building = tb_war_camp_1
 					remove_building = tb_war_camp_2
@@ -79,28 +79,28 @@ character_event = {
 				######################################
 				if = {
 					limit = { holding_type = castle }
-					
+
 					#Castle Wall:
 					remove_building = ca_wall_1
 					remove_building = ca_wall_2
 					remove_building = ca_wall_3
 					remove_building = ca_wall_4
 					remove_building = ca_wall_5
-					
+
 					#Fortifications:
 					remove_building = ca_wall_q_1
 					remove_building = ca_wall_q_2
 					remove_building = ca_wall_q_3
 					remove_building = ca_wall_q_4
 					remove_building = ca_wall_q_5
-					
+
 					#Castle Town:
 					remove_building = ca_town_1
 					remove_building = ca_town_2
 					remove_building = ca_town_3
 					remove_building = ca_town_4
 					remove_building = ca_town_5
-					
+
 					#Castle Shipyard, we can add it, it will be removed if not supported anyway.
 					remove_building = ca_shipyard_1
 					remove_building = ca_shipyard_2
@@ -117,7 +117,7 @@ character_event = {
 					remove_building = ca_militia_barracks_2
 					remove_building = ca_militia_barracks_3
 					remove_building = ca_militia_barracks_4
-					
+
 					remove_building = ca_training_grounds_1
 					remove_building = ca_training_grounds_2
 					remove_building = ca_training_grounds_3
@@ -134,17 +134,17 @@ character_event = {
 					remove_building = ca_stable_3
 					remove_building = ca_stable_4
 					remove_building = ca_stable_5
-					remove_building = ca_stable_6					
-					
+					remove_building = ca_stable_6
+
 
 				}
-				
+
 				######################################
 				#####       build in city         ####
 				######################################
 				if = {
 					limit = { holding_type = city }
-					
+
 					#City Walls:
 					remove_building = ct_wall_1
 					remove_building = ct_wall_2
@@ -152,7 +152,7 @@ character_event = {
 					remove_building = ct_wall_4
 					remove_building = ct_wall_5
 					remove_building = ct_wall_6
-					
+
 					#City Fortifications:
 					remove_building = ct_wall_q_1
 					remove_building = ct_wall_q_2
@@ -160,26 +160,26 @@ character_event = {
 					remove_building = ct_wall_q_4
 					remove_building = ct_wall_q_5
 					remove_building = ct_wall_q_6
-					
+
 					#Town Market
 					remove_building = ct_marketplace_1
 					remove_building = ct_marketplace_2
 					remove_building = ct_marketplace_3
 					remove_building = ct_marketplace_4
 					remove_building = ct_marketplace_5
-					
+
 					#Port
 					remove_building = ct_port_1
 					remove_building = ct_port_2
 					remove_building = ct_port_3
 					remove_building = ct_port_4
 					remove_building = ct_port_5
-					
+
 					#University
 					remove_building = ct_university_1
 					remove_building = ct_university_2
 					remove_building = ct_university_3
-					
+
 					#Shipyard
 					remove_building = ct_shipyard_1
 					remove_building = ct_shipyard_2
@@ -206,15 +206,15 @@ character_event = {
 					remove_building = ct_guard_4
 					remove_building = ct_guard_5
 					remove_building = ct_guard_6
-					
+
 				}
-				
+
 				######################################
 				#####      build in temple        ####
 				######################################
 				if = {
 					limit = { holding_type = temple }
-					
+
 					#Temple Walls:
 					remove_building = tp_wall_1
 					remove_building = tp_wall_2
@@ -222,7 +222,7 @@ character_event = {
 					remove_building = tp_wall_4
 					remove_building = tp_wall_5
 					remove_building = tp_wall_6
-					
+
 					#Temple Fortifications:
 					remove_building = tp_wall_q_1
 					remove_building = tp_wall_q_2
@@ -230,7 +230,7 @@ character_event = {
 					remove_building = tp_wall_q_4
 					remove_building = tp_wall_q_5
 					remove_building = tp_wall_q_6
-					
+
 					#Temple Town
 					remove_building = tp_town_1
 					remove_building = tp_town_2
@@ -238,7 +238,7 @@ character_event = {
 					remove_building = tp_town_4
 					remove_building = tp_town_5
 					remove_building = tp_town_6
-					
+
 					#Monastery
 					remove_building = tp_monastery_1
 					remove_building = tp_monastery_2
@@ -247,13 +247,13 @@ character_event = {
 					remove_building = tp_monastery_5
 					remove_building = tp_monastery_6
 
-					
+
 					#Monastic School
 					remove_building = tp_school_1
 					remove_building = tp_school_2
 					remove_building = tp_school_3
-					
-					
+
+
 					#Shipyard
 					remove_building = tp_shipyard_1
 					remove_building = tp_shipyard_2
@@ -275,7 +275,7 @@ character_event = {
 					remove_building = tp_elite_barracks_4
 					remove_building = tp_elite_barracks_5
 					remove_building = tp_elite_barracks_6
-					
+
 				}
 			}
 		}
