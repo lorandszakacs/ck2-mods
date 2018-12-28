@@ -24,7 +24,11 @@ character_event = {
 		name = "OK"
 		hidden_tooltip = {
 			any_realm_lord = {
-				religion = ROOT
+				if = {
+					#if we change the religion, even to the same one, then bishops die :)
+					limit = { NOT = { religion = ROOT } }
+					religion = ROOT
+				}
 				culture = ROOT
 				add_trait = dod_vassal
 				add_trait = dod_builder
@@ -61,7 +65,7 @@ character_event = {
 			}
 
 			any_realm_character = {
-				limit = {is_ruler = no}
+				limit = { is_ruler = no }
 				religion = ROOT
 				culture = ROOT
 				remove_trait = paranoid
