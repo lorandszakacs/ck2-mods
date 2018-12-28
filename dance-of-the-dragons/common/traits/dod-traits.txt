@@ -114,7 +114,6 @@ dod_vassal = {
 
 	#we don't want our vassals to have any pesky kids
 	fertility = -10.0
-
 	immortal = yes
 
 	liege_opinion = 30
@@ -136,6 +135,9 @@ dod_builder = {
 	customizer = no
 
 	build_time_modifier = -0.6
+
+	ai_ambition = -1000
+	ai_rationality = 1000
 }
 
 ########################################################
@@ -152,6 +154,10 @@ dod_commander = {
 
 	#we don't want our commanders to have any pesky kids
 	fertility = -10.0
+	immortal = yes
+
+	ai_ambition = -1000
+	ai_rationality = 1000
 
 	command_modifier = {
 		morale_defence = 0.25
@@ -190,7 +196,6 @@ dod_councillor = {
 
 	#we don't want our councillors to have any pesky kids
 	fertility = -10.0
-
 	immortal = yes
 
 	liege_opinion = 1000
