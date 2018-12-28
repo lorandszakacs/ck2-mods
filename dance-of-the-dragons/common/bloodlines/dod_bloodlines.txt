@@ -1,0 +1,8 @@
+#used only to identify people, does not give any bonuses on purpose,
+#for that we have the dod_player traits
+dance_of_dragons_bloodline = {
+    inheritance = all_descendants
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_generic_hero
+	flags = { created_bloodline }
+}
