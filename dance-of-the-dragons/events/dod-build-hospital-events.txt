@@ -1,0 +1,140 @@
+namespace = dodHospital
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+
+character_event = {
+	id = dodHospital.0
+	desc = "Build hospitals everywhere!"
+	picture = GFX_evt_emissary
+
+	is_triggered_only = yes
+	ai = no
+
+	option = {
+		name = "OK"
+
+		any_realm_province = {
+			limit = {
+				has_hospital = no
+			}
+
+			build_holding = {
+				type = hospital
+				holder = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = "Cancel"
+	}
+}
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+
+character_event = {
+	id = dodHospital.1
+	desc = "Build everything in your hospitals everywhere!"
+	picture = GFX_evt_emissary
+
+	is_triggered_only = yes
+	ai = no
+
+	option = {
+		name = "OK"
+		hidden_tooltip = {
+            any_realm_province = {
+    			limit = {
+    				has_hospital = yes
+    			}
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = hospital_building_1
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = hospital_building_2
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = hospital_building_3
+              	}
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = hospital_building_4
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = hospital_building_5
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = leper_colony_1
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = soup_kitchen_1
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = chapel_1
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = translation_house_1
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = pilgrims_inn_1
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = library_1
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = pharmacology_laboratory_1
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = medical_academy_1
+                }
+
+                add_to_extra_holding = {
+                  type = hospital
+                  building = observatory_1
+                }
+    		}
+		}
+	}
+	option = {
+		name = "Cancel"
+	}
+}
