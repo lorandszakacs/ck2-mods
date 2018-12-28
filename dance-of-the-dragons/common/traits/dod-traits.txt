@@ -2,7 +2,7 @@
 dod_player = {
 	cached = yes
 
-	demesne_size = 90
+	demesne_size = 5
 
 	birth = 0
 	inherit_chance = 0
@@ -11,9 +11,9 @@ dod_player = {
 
 	leader = yes
 
-	spouse_opinion = 1000
+	spouse_opinion = 50
 
-	combat_rating = 80
+	combat_rating = 20
 
 	command_modifier = {
 		morale_defence = 0.25
@@ -39,6 +39,64 @@ dod_player = {
 }
 
 ########################################################
+dod_player_overpowered = {
+	cached = yes
+
+	demesne_size = 2000
+
+	birth = 0
+	inherit_chance = 0
+	random = no
+	customizer = no
+
+	leader = yes
+
+	spouse_opinion = 5000
+	vassal_opinion = 5000
+
+	combat_rating = 200
+
+	command_modifier = {
+		morale_defence = 1.25
+		defence = 1.25
+
+		light_infantry = 1.25
+		heavy_infantry = 1.25
+		cavalry = 1.25
+		light_infantry = 1.25
+
+		damage = 1.25
+		pursue = 16.0
+
+		center = 1.25
+		flank = 1.25
+		siege = 20.5
+
+		speed = 25.0
+		retreat = 25.0
+
+		combat_rating = 200
+	}
+}
+
+########################################################
+
+dod_spouse = {
+	cached = yes
+
+	birth = 0
+	inherit_chance = 0
+	random = no
+	customizer = no
+
+	spouse_opinion = 5000
+
+	ai_ambition = -1000
+	ai_rationality = 1000
+}
+
+
+########################################################
 
 dod_vassal = {
 	cached = yes
@@ -61,7 +119,8 @@ dod_vassal = {
 
 	liege_opinion = 30
 	vassal_opinion = 30
-	spouse_opinion = 30
+	#you don't want vassal's wives plotting against them :/
+	spouse_opinion = 300
 
 	ai_ambition = -1000
 	ai_rationality = 1000
