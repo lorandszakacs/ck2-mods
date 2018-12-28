@@ -3,6 +3,7 @@
 dance_of_dragons_bloodline = {
     vassal_opinion = 50
     spouse_opinion = 50
+    demesne_size = 15
 
     inheritance = all_descendants
 	allow_bastards = yes

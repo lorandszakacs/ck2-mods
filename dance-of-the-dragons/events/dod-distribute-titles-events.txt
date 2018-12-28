@@ -13,13 +13,13 @@ character_event = {
 	id = dodDistribute.0
 	desc = "Hand out BARONY titles."
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
-		
+
 		any_demesne_title = {
 			limit = {
 				OR = {
@@ -30,7 +30,7 @@ character_event = {
 							holding_type = temple
 						}
 					}
-					
+
 					AND = {
 						ROOT = { is_feudal = yes }
 						OR = {
@@ -70,7 +70,7 @@ character_event = {
 					learning = 12
 				}
 			}
-			
+
 			new_character = {
 				gain_title = PREV
 
@@ -124,13 +124,13 @@ character_event = {
 	id = dodDistribute.1
 	desc = "Hand out COUNTY titles, except in the capital, and the duchy in which your capital is."
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
-		
+
 		any_demesne_title = {
 			limit = {
 				AND = {
@@ -192,7 +192,7 @@ character_event = {
 					add_spouse = PREV
 				}
 			}
-			
+
 			# if you trigger the dodDistribute.0 event before this. Then
 			# if you're a republic: then cities won't have an owner, and the new county owner gets them
 			# if you're a feudal state: then baronies won't have an owner, then the new county owner gets them
@@ -204,14 +204,14 @@ character_event = {
 					}
 				}
 			}
-			
+
 		#############################
-		
+
 		} #any title
 
 		# make sure we get back the titles from the capital duchy.
 		capital_scope = {
-			duchy = {
+			kingdom = {
 				any_de_jure_vassal_title = {
 					limit = {
 						OR = {
@@ -252,13 +252,13 @@ character_event = {
 	id = dodDistribute.2
 	desc = "Hand out DUKE titles, except for the capital duchy."
 	picture = GFX_evt_emissary
-	
+
 	is_triggered_only = yes
 	ai = no
-	
+
 	option = {
 		name = "OK"
-		
+
 		any_demesne_title = {
 			limit = {
 				AND = {
@@ -282,9 +282,9 @@ character_event = {
 			}
 
 
-			
+
 		#############################
-		
+
 		} #any title
 	}
 
@@ -301,4 +301,3 @@ character_event = {
 #####################################################################################################
 #####################################################################################################
 #####################################################################################################
-
