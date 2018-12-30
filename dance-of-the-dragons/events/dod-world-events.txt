@@ -185,6 +185,8 @@ character_event = {
 			any_realm_province = {
                 religion = ROOT
                 culture = ROOT
+				#this one always shows up if you usurped a nomad provice
+				remove_province_modifier = nomad_agitation
 			} # end any_realm_province
         }
 	}
