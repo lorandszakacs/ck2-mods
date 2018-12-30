@@ -9,8 +9,6 @@ namespace = dodWorld
 #####################################################################################################
 #####################################################################################################
 
-#Kill everyone else!!
-
 character_event = {
 	id = dodWorld.1
 	desc = "DESTROY EVERYTHING!"
@@ -21,6 +19,7 @@ character_event = {
 
 	option = {
 		name = "OK"
+        hidden_tooltip = {
 			any_province = {
                 any_province_holding = {
                     limit = {
@@ -34,7 +33,8 @@ character_event = {
                     }
                     destroy_settlement = THIS
                 }
-			} # end any_character
+			} # end any_province
+        }
 	}
 
 	option = {
@@ -61,6 +61,7 @@ character_event = {
 
 	option = {
 		name = "OK"
+        hidden_tooltip = {
 			any_title = {
                 limit = {
                     AND = {
@@ -75,7 +76,8 @@ character_event = {
                     }
                 }
                 destroy_landed_title = THIS
-			} # end any_character
+			} # end any_title
+        }
 	}
 
 	option = {
@@ -139,7 +141,8 @@ character_event = {
 
 	option = {
 		name = "OK"
-			any_province = {
+        hidden_tooltip = {
+            any_province = {
                 #don't usurp yourself
                 limit = {
                   NOT = { owner = { character = ROOT } }
@@ -149,7 +152,9 @@ character_event = {
                 }
                 religion = ROOT
                 culture = ROOT
-			} # end any_character
+			} # end any_province
+        }
+
 	}
 
 	option = {
@@ -168,7 +173,7 @@ character_event = {
 
 character_event = {
 	id = dodWorld.5
-	desc = "CONVERT EVERYTHING!"
+	desc = "CONVERT EVERYTHING in your realm!"
 	picture = GFX_evt_emissary
 
 	ai = no
@@ -176,10 +181,12 @@ character_event = {
 
 	option = {
 		name = "OK"
+        hidden_tooltip = {
 			any_realm_province = {
                 religion = ROOT
                 culture = ROOT
 			} # end any_realm_province
+        }
 	}
 
 	option = {
