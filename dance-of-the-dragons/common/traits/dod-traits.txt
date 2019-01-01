@@ -12,8 +12,8 @@ dod_player = {
 	leader = yes
 
 	spouse_opinion = 50
-
 	combat_rating = 20
+	retinue_maintenence_cost = -0.50
 
 	command_modifier = {
 		morale_defence = 0.25
@@ -55,6 +55,7 @@ dod_player_overpowered = {
 	vassal_opinion = 5000
 
 	combat_rating = 200
+	retinue_maintenence_cost = -0.99
 
 	command_modifier = {
 		morale_defence = 1.25

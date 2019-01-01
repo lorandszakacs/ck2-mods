@@ -1,0 +1,90 @@
+# Types:
+# 0 - Light Infantry
+# 1 - Heavy Infantry
+# 2 - Pikemen
+# 3 - Light Cavalry
+# 4 - Heavy Cavalry
+# 5 - Archers
+# 6 - Special troops
+
+# Tribal Retinues
+
+DOD_PIKEMEN = {
+	first_type = 2
+	first_amount = 750
+
+    potential = {
+        # FROM = {
+        #     any_owned_bloodline = {
+        #         has_bloodline_flag = dance_of_dragons_bloodline_flag
+        #     }
+        # }
+    }
+
+	hire_cost = 1000
+	costs_gold = yes
+
+	modifier = {
+        pikemen_defensive = 5.0
+		pikemen_offensive = 2.5
+        pikemen_morale = 2.5
+	}
+}
+
+DOD_CAVALRY = {
+	first_type = 4
+	first_amount = 250
+
+    second_type = 3
+    second_amount = 500
+
+    potential = {
+        # FROM = {
+        #     any_owned_bloodline = {
+        #         has_bloodline_flag = dance_of_dragons_bloodline_flag
+        #     }
+        # }
+    }
+
+	hire_cost = 1000
+	costs_gold = yes
+
+	modifier = {
+        light_cavalry_offensive = 2.5
+		light_cavalry_defensive = 2.5
+        light_cavalry_morale = 2.5
+
+        knights_offensive = 2.5
+        knights_defensive = 2.5
+        knights_morale = 2.5
+	}
+}
+
+DOD_FOOT = {
+	first_type = 5
+	first_amount = 1000
+
+    second_type = 1
+    second_amount = 500
+
+    potential = {
+        # FROM = {
+        #     any_owned_bloodline = {
+        #         has_bloodline_flag = dance_of_dragons_bloodline_flag
+        #     }
+        # }
+    }
+
+	hire_cost = 1000
+	costs_gold = yes
+
+	modifier = {
+        heavy_infantry_offensive = 2.5
+		heavy_infantry_defensive = 2.5
+		heavy_infantry_morale = 2.5
+
+        archers_offensive = 5.0
+		archers_defensive = 2.5
+        archers_morale = 2.5
+	}
+}
