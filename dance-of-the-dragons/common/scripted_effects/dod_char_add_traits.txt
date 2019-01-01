@@ -1,0 +1,43 @@
+#SCOPE: THIS = Character
+fn_dod_add_traits_self = {
+    add_trait = genius
+    add_trait = fair
+    add_trait = strong
+
+    add_trait = gregarious
+    add_trait = brave
+    add_trait = patient
+    add_trait = just
+}
+
+#SCOPE: THIS = Character
+fn_dod_add_traits_self_op = {
+    add_trait = genius
+    add_trait = fair
+    add_trait = strong
+
+    add_trait = gregarious
+    add_trait = brave
+    add_trait = patient
+    add_trait = just
+    add_trait = kind
+    add_trait = diligent
+    add_trait = generous
+
+    #diplomacy
+    add_trait = falconer
+    add_trait = poet
+    add_trait = gamer
+    #martial
+    add_trait = duelist
+    add_trait = hunter
+    #stewardship
+    add_trait = administrator
+    add_trait = architect
+    add_trait = gardener
+    #intrigue
+    add_trait = schemer
+    #learning
+    add_trait = scholar
+    add_trait = erudite
+}

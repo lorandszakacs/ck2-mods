@@ -9,10 +9,44 @@ namespace = dodSelf
 #####################################################################################################
 #####################################################################################################
 
-# Removes negative traits + adds positive ones. Adds normal dod_player_buff.
-
 character_event = {
 	id = dodSelf.0
+	desc = "Found Bloodline + NORMAL BUFF - Removes negative traits from yourself."
+	picture = GFX_evt_emissary
+
+	is_triggered_only = yes
+
+	option = {
+		name = "OK"
+
+		create_bloodline = {
+			type = dance_of_dragons_bloodline
+		}
+
+		fn_dod_remove_education_traits = yes
+		fn_dod_remove_negative_traits = yes
+
+		fn_dod_add_traits_self = yes
+		add_trait = brilliant_strategist
+		add_trait = dod_player
+		add_trait = dod_commander
+	}
+	option = {
+		name = "Cancel"
+	}
+}
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+
+character_event = {
+	id = dodSelf.1
 	desc = "NORMAL BUFF - Removes negative traits from yourself."
 	picture = GFX_evt_emissary
 
@@ -21,43 +55,14 @@ character_event = {
 	option = {
 		name = "OK"
 
+		fn_dod_remove_education_traits = yes
+		fn_dod_remove_negative_traits = yes
+		fn_dod_add_traits_self = yes
+
+		add_trait = brilliant_strategist
 		add_trait = dod_player
-		add_trait = just
-		add_trait = genius
-		add_trait = fair
-		add_trait = strong
-		add_trait = brave
-		add_trait = gregarious
+		add_trait = dod_commander
 
-		remove_trait = quick
-
-		remove_trait = paranoid
-		remove_trait = cruel
-		remove_trait = lisp
-		remove_trait = maimed
-		remove_trait = impaler
-		remove_trait = stressed
-		remove_trait = depressed
-		remove_trait = lunatic
-		remove_trait = possessed
-		remove_trait = syphilitic
-		remove_trait = slothful
-		remove_trait = imbecile
-		remove_trait = wroth
-		remove_trait = gluttonous
-		remove_trait = greedy
-		remove_trait = ambitious
-		remove_trait = envious
-		remove_trait = ill
-		remove_trait = incapable
-		remove_trait = proud
-		remove_trait = deceitful
-		remove_trait = craven
-		remove_trait = shy
-		remove_trait = arbitrary
-		remove_trait = cynical
-		remove_trait = lustful
-		remove_trait = leper
 	}
 	option = {
 		name = "Cancel"
@@ -73,11 +78,9 @@ character_event = {
 #####################################################################################################
 #####################################################################################################
 
-# Removes negative traits + adds positive ones. Adds normal dod_player_overpowered buff.
-
 character_event = {
-	id = dodSelf.1
-	desc = "OVERPOWERED BUFF - Removes negative traits from yourself."
+	id = dodSelf.10
+	desc = "OP BUFF - Removes negative traits from yourself + adds a bunch of positive ones"
 	picture = GFX_evt_emissary
 
 	is_triggered_only = yes
@@ -85,123 +88,25 @@ character_event = {
 	option = {
 		name = "OK"
 
-		add_trait = dod_player_overpowered
-		add_trait = just
-		add_trait = genius
-		add_trait = fair
-		add_trait = strong
-		add_trait = robust
-		add_trait = brave
-		add_trait = gregarious
-		add_trait = architect
-		add_trait = administrator
-		add_trait = gardener
-		add_trait = hunter
-		add_trait = duelist
-		add_trait = gamer
-		add_trait = socializer
-		add_trait = schemer
+		fn_dod_remove_education_traits = yes
+		fn_dod_remove_negative_traits = yes
+		fn_dod_add_traits_self_op = yes
 
-		remove_trait = quick
-
-		remove_trait = paranoid
-		remove_trait = cruel
-		remove_trait = lisp
-		remove_trait = maimed
-		remove_trait = impaler
-		remove_trait = stressed
-		remove_trait = depressed
-		remove_trait = lunatic
-		remove_trait = possessed
-		remove_trait = syphilitic
-		remove_trait = slothful
-		remove_trait = imbecile
-		remove_trait = wroth
-		remove_trait = gluttonous
-		remove_trait = greedy
-		remove_trait = ambitious
-		remove_trait = envious
-		remove_trait = ill
-		remove_trait = incapable
-		remove_trait = proud
-		remove_trait = deceitful
-		remove_trait = craven
-		remove_trait = shy
-		remove_trait = arbitrary
-		remove_trait = cynical
-		remove_trait = lustful
-		remove_trait = leper
-	}
-	option = {
-		name = "Cancel"
-	}
-}
-
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-#####################################################################################################
-
-# Removes negative traits + adds positive ones. Adds normal dod_player_buff.
-
-character_event = {
-	id = dodSelf.2
-	desc = "Found normal Blood of the Dragon Bloodline"
-	picture = GFX_evt_emissary
-
-	is_triggered_only = yes
-
-	option = {
-		name = "Create bloodline!"
-
-		create_bloodline = {
-			type = dance_of_dragons_bloodline
-		}
-
+		add_trait = brilliant_strategist
 		add_trait = dod_player
-		add_trait = just
-		add_trait = genius
-		add_trait = fair
-		add_trait = strong
-		add_trait = brave
-		add_trait = gregarious
-
-		remove_trait = quick
-
-		remove_trait = paranoid
-		remove_trait = cruel
-		remove_trait = lisp
-		remove_trait = maimed
-		remove_trait = impaler
-		remove_trait = stressed
-		remove_trait = depressed
-		remove_trait = lunatic
-		remove_trait = possessed
-		remove_trait = syphilitic
-		remove_trait = slothful
-		remove_trait = imbecile
-		remove_trait = wroth
-		remove_trait = gluttonous
-		remove_trait = greedy
-		remove_trait = ambitious
-		remove_trait = envious
-		remove_trait = ill
-		remove_trait = incapable
-		remove_trait = proud
-		remove_trait = deceitful
-		remove_trait = craven
-		remove_trait = shy
-		remove_trait = arbitrary
-		remove_trait = cynical
-		remove_trait = lustful
-		remove_trait = leper
+		add_trait = dod_commander
 
 	}
 	option = {
 		name = "Cancel"
 	}
 }
+
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################
+#####################################################################################################

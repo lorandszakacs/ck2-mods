@@ -1,0 +1,60 @@
+#SCOPE: THIS = Character
+fn_dod_remove_education_traits = {
+	#DIPLOMACY
+	remove_trait = naive_appeaser
+	remove_trait = underhanded_rogue
+	remove_trait = charismatic_negotiator
+	remove_trait = grey_eminence
+	#MARTIAL
+	remove_trait = misguided_warrior
+	remove_trait = tough_soldier
+	remove_trait = skilled_tactician
+	remove_trait = brilliant_strategist
+	#STEWARDSHIP
+	remove_trait = indulgent_wastrel
+	remove_trait = thrifty_clerk
+	remove_trait = fortune_builder
+	remove_trait = midas_touched
+	#INTRIGUE
+	remove_trait = amateurish_plotter
+	remove_trait = flamboyant_schemer
+	remove_trait = intricate_webweaver
+	remove_trait = elusive_shadow
+	#LEARNING
+	remove_trait = detached_priest
+	remove_trait = martial_cleric
+	remove_trait = scholarly_theologian
+	remove_trait = mastermind_theologian
+}
+
+#SCOPE: THIS = Character
+fn_dod_remove_negative_traits = {
+    remove_trait = paranoid
+    remove_trait = cruel
+    remove_trait = lisp
+    remove_trait = maimed
+    remove_trait = impaler
+    remove_trait = stressed
+    remove_trait = depressed
+    remove_trait = lunatic
+    remove_trait = possessed
+    remove_trait = syphilitic
+    remove_trait = slothful
+    remove_trait = imbecile
+    remove_trait = wroth
+    remove_trait = gluttonous
+    remove_trait = greedy
+    remove_trait = ambitious
+    remove_trait = envious
+    remove_trait = ill
+    remove_trait = incapable
+    remove_trait = proud
+    remove_trait = deceitful
+    remove_trait = craven
+    remove_trait = shy
+    remove_trait = arbitrary
+    remove_trait = cynical
+    remove_trait = lustful
+    remove_trait = leper
+    remove_trait = is_fat
+}
