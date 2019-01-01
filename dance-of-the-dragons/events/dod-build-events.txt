@@ -376,8 +376,7 @@ character_event = {
 					add_building = tb_shipyard_3
 					add_building = tb_shipyard_4
 
-
-
+					add_building = tb_dod_retinues
 				}
 
 				######################################
@@ -454,6 +453,9 @@ character_event = {
 					add_building = ca_special_fortifications_2
 					add_building = ca_special_fortifications_3
 					add_building = ca_special_fortifications_4
+
+					#DOD building
+					add_building = ca_dod_retinues
 
 				}
 
