@@ -14,6 +14,7 @@ dod_player = {
 	spouse_opinion = 50
 	combat_rating = 20
 	retinue_maintenence_cost = -0.50
+	army_reinforce_rate = 5.00
 
 	command_modifier = {
 		morale_defence = 0.25
@@ -33,8 +34,6 @@ dod_player = {
 
 		speed = 4.0
 		retreat = 4.0
-
-		combat_rating = 80
 	}
 }
 
@@ -54,8 +53,9 @@ dod_player_overpowered = {
 	spouse_opinion = 5000
 	vassal_opinion = 5000
 
-	combat_rating = 200
+	combat_rating = 300
 	retinue_maintenence_cost = -0.99
+	army_reinforce_rate = 5.00
 
 	command_modifier = {
 		morale_defence = 1.25
@@ -75,8 +75,6 @@ dod_player_overpowered = {
 
 		speed = 25.0
 		retreat = 25.0
-
-		combat_rating = 200
 	}
 }
 
@@ -159,6 +157,8 @@ dod_commander = {
 
 	ai_ambition = -1000
 	ai_rationality = 1000
+	ai_honor = 1000
+	army_reinforce_rate = 5.00
 
 	command_modifier = {
 		morale_defence = 0.25
