@@ -21,17 +21,18 @@ character_event = {
 
 	option = {
 		name = "OK"
+
+		#Diplomacy
 		create_character = {
 			random_traits = no
 			dynasty = NONE
+			historical = no
 			female = no
 			age = 16
-			health = 10.0
-			fertility = -50.0
+			name = "Diplomacy Councillor"
 			culture = ROOT
 			religion = ROOT
 			trait = grey_eminence
-			trait = dance_vassal
 			trait = diligent
 			trait = kind
 			trait = patient
@@ -40,7 +41,12 @@ character_event = {
 			trait = just
 			trait = gregarious
 			trait = content
+
+			trait = dod_obedient
+			trait = dod_servant
+			trait = dod_infertile
 			trait = dod_councillor
+
 			attributes = {
 				diplomacy = 15
 				martial = 0
@@ -50,16 +56,16 @@ character_event = {
 			}
 		}
 
+		#Martial
 		create_character = {
 			random_traits = no
 			dynasty = NONE
+			historical = no
 			female = no
 			age = 16
-			health = 10.0
-			fertility = -50.0
+			name = "Martial Councillor"
 			culture = ROOT
 			religion = ROOT
-			trait = dod_commander
 			trait = brilliant_strategist
 			trait = diligent
 			trait = kind
@@ -67,26 +73,32 @@ character_event = {
 			trait = humble
 			trait = brave
 			trait = just
-			trait = gregarious
-			trait = strong
+			trait = hunter
+			trait = duelist
 			trait = content
+
+			trait = dod_obedient
+			trait = dod_servant
+			trait = dod_infertile
 			trait = dod_councillor
+
 			attributes = {
 				diplomacy = 0
-				martial = 15
+				martial = 20
 				stewardship = 0
 				intrigue = 0
 				learning = 0
 			}
 		}
 
+		#Stewardship
 		create_character = {
 			random_traits = no
 			dynasty = NONE
+			historical = no
 			female = no
 			age = 16
-			health = 10.0
-			fertility = -50.0
+			name = "Steward Councillor"
 			culture = ROOT
 			religion = ROOT
 			trait = midas_touched
@@ -96,9 +108,15 @@ character_event = {
 			trait = humble
 			trait = brave
 			trait = just
-			trait = gregarious
+			trait = architect
+			trait = administrator
 			trait = content
+
+			trait = dod_obedient
+			trait = dod_servant
+			trait = dod_infertile
 			trait = dod_councillor
+
 			attributes = {
 				diplomacy = 0
 				martial = 0
@@ -108,13 +126,14 @@ character_event = {
 			}
 		}
 
+		#Intrigue
 		create_character = {
 			random_traits = no
 			dynasty = NONE
+			historical = no
 			female = no
 			age = 16
-			health = 10.0
-			fertility = -50.0
+			name = "Intrigue Councillor"
 			culture = ROOT
 			religion = ROOT
 			trait = elusive_shadow
@@ -122,11 +141,15 @@ character_event = {
 			trait = kind
 			trait = patient
 			trait = humble
-			trait = brave
 			trait = just
-			trait = gregarious
+			trait = schemer
 			trait = content
+
+			trait = dod_obedient
+			trait = dod_servant
+			trait = dod_infertile
 			trait = dod_councillor
+
 			attributes = {
 				diplomacy = 0
 				martial = 0
@@ -139,10 +162,10 @@ character_event = {
 		create_character = {
 			random_traits = no
 			dynasty = NONE
+			historical = no
 			female = no
 			age = 16
-			health = 10.0
-			fertility = -50.0
+			name = "Learning Councillor"
 			culture = ROOT
 			religion = ROOT
 			trait = mastermind_theologian
@@ -150,12 +173,15 @@ character_event = {
 			trait = kind
 			trait = patient
 			trait = humble
-			trait = brave
 			trait = just
-			trait = gregarious
-			trait = content
-			trait = dod_councillor
 			trait = physician
+			trait = content
+
+			trait = dod_obedient
+			trait = dod_servant
+			trait = dod_infertile
+			trait = dod_councillor
+
 			attributes = {
 				diplomacy = 0
 				martial = 0
@@ -193,169 +219,32 @@ character_event = {
 	option = {
 		name = "OK"
 
-		any_realm_lord = {
+		hidden_tooltip = {
+			any_realm_lord = {
 
-			limit = {
-				NOT = { trait = dod_player }
-				OR = {
-					tier = COUNT
-					tier = DUKE
-					tier = KING
-				}
-			}
-
-			any_courtier = {
 				limit = {
-					NOT = { dynasty = ROOT }
-					NOT = { trait = dod_vassal }
-					NOT = { spouse = { dynasty = ROOT } }
-					NOT = { spouse = { character = PREV} }
+					NOT = { trait = dod_player }
+					OR = {
+						tier = COUNT
+						tier = DUKE
+						tier = KING
+					}
 				}
-				death = {death_reason = death_natural}
-			}
 
-			create_character = {
-				random_traits = no
-				dynasty = NONE
-				female = no
-				age = 16
-				health = 10.0
-				fertility = -50.0
-				culture = ROOT
-				religion = ROOT
-				trait = grey_eminence
-				trait = dance_vassal
-				trait = diligent
-				trait = kind
-				trait = patient
-				trait = humble
-				trait = brave
-				trait = just
-				trait = gregarious
-				trait = content
-				trait = dod_councillor
-				attributes = {
-					diplomacy = 10
-					martial = 0
-					stewardship = 0
-					intrigue = 0
-					learning = 0
+				any_courtier = {
+					limit = {
+						NOT = { dynasty = ROOT }
+						NOT = { trait = dod_vassal }
+						NOT = { spouse = { dynasty = ROOT } }
+						NOT = { spouse = { character = PREV} }
+					}
+					death = {death_reason = death_natural}
 				}
-			}
 
-			create_character = {
-				random_traits = no
-				dynasty = NONE
-				female = no
-				age = 16
-				health = 10.0
-				fertility = -50.0
-				culture = ROOT
-				religion = ROOT
-				trait = brilliant_strategist
-				trait = diligent
-				trait = kind
-				trait = patient
-				trait = humble
-				trait = brave
-				trait = just
-				trait = gregarious
-				trait = content
-				trait = dod_councillor
-				attributes = {
-					diplomacy = 0
-					martial = 10
-					stewardship = 0
-					intrigue = 0
-					learning = 0
-				}
-			}
+				# TODO: ----- copy paste the above things
 
-			create_character = {
-				random_traits = no
-				dynasty = NONE
-				female = no
-				age = 16
-				health = 10.0
-				fertility = -50.0
-				culture = ROOT
-				religion = ROOT
-				trait = midas_touched
-				trait = diligent
-				trait = kind
-				trait = patient
-				trait = humble
-				trait = brave
-				trait = just
-				trait = gregarious
-				trait = content
-				trait = dod_councillor
-				attributes = {
-					diplomacy = 0
-					martial = 0
-					stewardship = 10
-					intrigue = 0
-					learning = 0
-				}
-			}
-
-			create_character = {
-				random_traits = no
-				dynasty = NONE
-				female = no
-				age = 16
-				health = 10.0
-				fertility = -50.0
-				culture = ROOT
-				religion = ROOT
-				trait = elusive_shadow
-				trait = diligent
-				trait = kind
-				trait = patient
-				trait = humble
-				trait = brave
-				trait = just
-				trait = gregarious
-				trait = content
-				trait = dod_councillor
-				attributes = {
-					diplomacy = 0
-					martial = 0
-					stewardship = 0
-					intrigue = 10
-					learning = 0
-				}
-			}
-
-			create_character = {
-				random_traits = no
-				dynasty = NONE
-				female = no
-				age = 16
-				health = 10.0
-				fertility = -50.0
-				culture = ROOT
-				religion = ROOT
-				trait = mastermind_theologian
-				trait = diligent
-				trait = kind
-				trait = patient
-				trait = humble
-				trait = brave
-				trait = just
-				trait = gregarious
-				trait = content
-				trait = physician
-				trait = dod_councillor
-				attributes = {
-					diplomacy = 5
-					martial = 0
-					stewardship = 0
-					intrigue = 0
-					learning = 20
-				}
-			}
-		} # any realm lord
+			} # any realm lord
+		}
 	}
 
 	option = {
