@@ -1,0 +1,205 @@
+########################################################
+###### Overpowered versions of the normal traits #######
+########################################################
+
+dod_player_op = {
+	birth = 0
+	inherit_chance = 0
+	random = 0
+	customizer = 0
+
+	diplomacy = 50
+	martial = 50
+	stewardship = 50
+	intrigue = 50
+	learning = 50
+	combat_rating = 50
+
+	fertility = 2.25
+	health = 9.00
+
+	spouse_opinion = 2500
+	liege_opinion = 2500
+	vassal_opinion = 2500
+	sex_appeal_opinion = 2500
+
+	retinue_maintenence_cost = -0.99
+	army_reinforce_rate = 5.00
+
+	demesne_size = 250
+	build_time_modifier = -0.99
+	build_cost_modifier = -0.99
+	global_revolt_risk = -0.50
+	global_supply_limit = 10.00
+	global_tax_modifier = 2.25
+
+	monthly_character_prestige = 10
+	monthly_character_piety = 10
+	threat_decay_speed = 25.00
+
+	opposites = {
+		dod_player
+	}
+}
+
+########################################################
+
+dod_spouse_op = {
+	birth = 0
+	inherit_chance = 0
+	random = 0
+	customizer = 0
+
+	diplomacy = 50
+	martial = 50
+	stewardship = 50
+	intrigue = 50
+	learning = 50
+	combat_rating = 50
+
+	fertility = 2.25
+	health = 20.00
+
+	spouse_opinion = 2500
+	liege_opinion = 2500
+	vassal_opinion = 2500
+
+	opposites =  {
+		hedonist
+		seducer
+		seductress
+		dod_spouse
+	}
+}
+
+
+########################################################
+
+dod_obedient_op = {
+	birth = 0
+	inherit_chance = 0
+	random = 0
+	customizer = 0
+
+	ai_ambition = -500
+	ai_rationality = 500
+	ai_honor = 500
+
+	health = 2.00
+
+	liege_opinion = 2500
+	vassal_opinion = 2500
+	spouse_opinion = 2500
+
+	opposites =  {
+		hedonist
+		seducer
+		seductress
+		dod_obedient
+	}
+}
+
+########################################################
+
+dod_councillor_op = {
+	birth = 0
+	inherit_chance = 0
+	random = 0
+	customizer = 0
+
+	diplomacy = 10
+	martial = 10
+	stewardship = 10
+	intrigue = 10
+	learning = 10
+
+	health = 20.00
+
+	opposites =  {
+		hedonist
+		seducer
+		seductress
+		ambitious
+		dod_councillor
+	}
+}
+
+
+########################################################
+
+dod_commander_op = {
+	birth = 0
+	inherit_chance = 0
+	random = 0
+	customizer = 0
+
+	leader = yes
+
+	martial = 50
+
+	health = 20.0
+	combat_rating = 300
+
+	#things that apply to the army being lead
+	army_reinforce_rate = 5.50
+	supply_limit = 10.0
+
+	command_modifier = {
+		morale_offence = 2.00
+		morale_defence = 2.00
+		defence = 2.00
+
+		speed = 32.00
+		retreat = 32.00
+		damage = 2.0
+		siege = 32.00
+
+		center = 0.10
+		flank = 0.10
+
+		religious_enemy = 2.0
+		narrow_flank = 2.0
+		winter_supply = 20.50
+
+		light_infantry = 2.0
+		heavy_infantry = 2.0
+		cavalry = 2.0
+	}
+
+	opposites = {
+		dod_commander
+	}
+}
+
+########################################################
+
+dod_vassal_op = {
+	birth = 0
+	inherit_chance = 0
+	random = 0
+	customizer = 0
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 12
+	intrigue = 6
+	learnings = 12
+
+	build_time_modifier = -0.99
+
+	spouse_opinion = 2500
+	liege_opinion = 2500
+	vassal_opinion = 2500
+
+	ai_ambition = -2500
+	ai_rationality = 2500
+	ai_honor = 2500
+
+	opposites = {
+		cruel
+		ambitious
+		dod_vassal
+	}
+}
+
+########################################################

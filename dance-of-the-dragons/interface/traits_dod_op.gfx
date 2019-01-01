@@ -1,0 +1,44 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_dod_player_op"
+		texturefile = "gfx/traits/dod_player_op.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dod_spouse_op"
+		texturefile = "gfx/traits/dod_spouse.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dod_obedient_op"
+		texturefile = "gfx/traits/dod_obedient.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dod_councillor_op"
+		texturefile = "gfx/traits/dod_councillor.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dod_commander_op"
+		texturefile = "gfx/traits/dod_commander.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dod_vassal_op"
+		texturefile = "gfx/traits/dod_vassal.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}
